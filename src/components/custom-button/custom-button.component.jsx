@@ -2,8 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { CustomButtonContainer } from './custom-button.styles';
 
-const CustomButton = () => {
-    <div>This is custom button</div>
-};
+const CustomButton = ({children, handleClick}) => (
+    <CustomButtonContainer>
+        <button onClick={handleClick}>
+            {children}
+        </button>
+    </CustomButtonContainer>
+);
+
+CustomButton.propTypes = {
+    children: PropTypes.string,
+    handleClick: PropTypes.func
+}
 
 export default CustomButton;
