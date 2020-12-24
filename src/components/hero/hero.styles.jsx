@@ -38,7 +38,7 @@ height: 60%;
 }
 
 img {
-    width: 15vw;
+    width: 14vw;
     height: auto;
    
 }
