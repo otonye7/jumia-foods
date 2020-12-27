@@ -4,24 +4,27 @@ import styled from 'styled-components';
 export const SubHeaderContainer = styled.div`
 height: 60px;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 width: 100%;
 
 .logo {
     margin-top: 6rem;
     align-self: center;
   }
-   
-  .navbar {
-    width: 50%;
-    height: 100%;
+
+  .nav-container {
+    width: 40vw;
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
+   
+  .navbar {
+    
+  }
 
   .nav-options {
-    padding: 10px 15px;
+    padding: 25px 28px;
     text-decoration: none;
     color: black;
   }

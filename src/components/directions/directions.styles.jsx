@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const DirectionsContainer = styled.div`
 width: 100vw;
 height: 100%;
+justify-content: center;
 
 .container {
     display: flex;
@@ -18,6 +19,8 @@ height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin: 1.3rem;
+
 }
 
 .image-container {
@@ -49,7 +52,7 @@ height: 100%;
 }
 
 img {
-    width: 24%;
+    width: 25%;
     height: auto;
     
 }

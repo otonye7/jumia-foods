@@ -10,8 +10,9 @@ const SubHeader = () => {
          <Link className='logo'>
             
          </Link>
-
-         <div className='navbar'>
+         
+         <div className='nav-container'>
+             <div className='navbar'>
              <Link className='nav-options'>
                  Help
              </Link>
@@ -20,6 +21,8 @@ const SubHeader = () => {
          <div className='buttons'>
               <CustomButton>Login</CustomButton>
          </div>
+         </div>
+         
 
         
      </SubHeaderContainer>

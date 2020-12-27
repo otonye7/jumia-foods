@@ -10,14 +10,14 @@ width: 100%;
    }
 
 .card-container {
-    width: 100%;
+    width: 120%;
     height: auto;
     display: flex;
     justify-content: space-between;
   }
 
   .down-card {
-    width: 100%;
+    width: 120%;
     height: auto;
     display: flex;
     

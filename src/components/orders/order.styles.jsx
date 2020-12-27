@@ -1,47 +1,32 @@
 import styled from 'styled-components';
 
 
-export const SubscriptionContainer = styled.div`
+export const OrderContainer = styled.div`
 width: 100vw;
-height: 40vh;
+height: 60vh;
 background-color: #ff8c00;
+display: flex;
+justify-content: center;
 
-.overall {
-    justify-content: center;
-}
-
-.container {
+.order-text {
     display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
 }
 
 .paragraph {
     display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
+    width: 50vw;
 }
 
-.sort {
-    width: 100%;
+.container {
+    
+}
+
+.c-buttons {
     display: flex;
-    justify-content: space-evenly;
-}
-
-.select {
-    width: 200px;
-    height: 9.4vh; 
-}
-
-.text-a {
-    width: 200px;
-    height: 8.3vh; 
-    justify-content: center;
-    text-align: center;
-    display: flex;
-
+    width: 30vw;
+    justify-content: space-around;
 }
 
 button {
@@ -59,7 +44,4 @@ button {
     outline: none;
     cursor: pointer;
 }
-
-
-
 `;
