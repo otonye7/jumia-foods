@@ -6,9 +6,13 @@ import { BrowserRouter } from 'react-router-dom';
 
 
 ReactDOM.render(
-  <BrowserRouter>
-      <App />
-  </BrowserRouter>,
+    <BrowserRouter>
+    
+        <App />
+       
+    </BrowserRouter>,
+  
   document.getElementById('root')
 );
+
 
