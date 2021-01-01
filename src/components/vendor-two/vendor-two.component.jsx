@@ -1,11 +1,8 @@
 import React from 'react';
-import {  CategoriesContainer } from './categories.styles';
-import BrowseCategories from '../browse-categories/browse-categories.component';
+import {  VendorContainer } from './vendor-two.styles';
+import VendorCategories from '../vendor-browse/vendor-browse.component';
 
-
-
-
-class Categories extends React.Component  {
+class VendorsTwo extends React.Component  {
     constructor() {
         super();
         
@@ -13,35 +10,35 @@ class Categories extends React.Component  {
         categories: [{
                 
             title: 'Kfc Spintex',
-            imageUrl: 'https://blog.jumia.com.ng/wp-content/uploads/2016/10/Nkwobi.jpg',
+            imageUrl: 'https://food.jumia.com/assets/img/foods/burger.png',
             id: 1,
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 3000
         },
         {
             title: 'Jumia party drinks',
-            imageUrl: 'https://food.jumia.ma/blog/wp-content/uploads/2020/01/Capture-594x400.png',
+            imageUrl: 'https://netstorage-legit.akamaized.net/images/e97673f027aef175.jpg',
             id: 2,
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 2000
         },
         {
             title: 'Barcelos',
-            imageUrl: 'https://i2.wp.com/techmoran.com/wp-content/uploads/2015/01/food-05.jpg?resize=795%2C385&ssl=1',
+            imageUrl: 'http://earthfinds.co.ug/media/k2/items/cache/d8c427c7dd6445d50d9342ac3fcef82e_XL.jpg',
             id: 3,
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 3500
         },
         {
             title: 'Pizza inn',
-            imageUrl: 'https://food.jumia.com.gh/blog/wp-content/uploads/2019/02/spaghetti-aragosta-633x400.jpg',
+            imageUrl: 'https://food.jumia.ug/blog/wp-content/uploads/2018/12/sushi-650x400.jpg',
             id: 4,
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 4000
         },
         {
             title: 'carbo corso',
-            imageUrl: 'https://food.jumia.com/assets/img/foods/burger.png',
+            imageUrl: 'https://food.jumia.ug/blog/wp-content/uploads/2018/12/sushi-650x400.jpg',
             id: 5,
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 2500
@@ -69,7 +66,7 @@ class Categories extends React.Component  {
         },
         {
             title: 'Halal',
-            imageUrl: 'https://food.jumia.ma/blog/wp-content/uploads/2020/01/Capture-594x400.png',
+            imageUrl: 'https://www.groundzeroweb.com/wp-content/uploads/2016/09/Amazing-Food-Pictures-9.jpg',
             id: 9,
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 4500
@@ -83,25 +80,20 @@ class Categories extends React.Component  {
 
   render() {
       return (
-          <CategoriesContainer>
-              <div className='heading'>
-                  <h2>New on Jumia</h2>
-              </div>
-
-            
+          <VendorContainer>
+             
           <div className='categories-items'>
            
               <div className='preview'>
-              <div  className='arrow'>&#10094;</div>	
+              	
               {
                   this.state.categories.filter(({ id}) => id < 5).map(({title, imageUrl, price, id}) => (
-                      <BrowseCategories key={id} title={title} imageUrl={imageUrl} price={price} />
+                      <VendorCategories key={id} title={title} imageUrl={imageUrl} price={price} />
                   ))
               }
-              <div className='arrow'>&#10095;</div>
           </div>
           </div>
-          </CategoriesContainer>
+          </VendorContainer>
       )
   }
     }
@@ -109,4 +101,4 @@ class Categories extends React.Component  {
  
 
 
-export default Categories;
+export default VendorsTwo;

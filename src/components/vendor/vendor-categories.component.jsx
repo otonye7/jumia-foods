@@ -1,11 +1,8 @@
 import React from 'react';
-import {  CategoriesContainer } from './categories.styles';
-import BrowseCategories from '../browse-categories/browse-categories.component';
+import {  VendorContainer } from './vendor-categories.styles';
+import VendorCategories from '../vendor-browse/vendor-browse.component';
 
-
-
-
-class Categories extends React.Component  {
+class Vendors extends React.Component  {
     constructor() {
         super();
         
@@ -69,7 +66,7 @@ class Categories extends React.Component  {
         },
         {
             title: 'Halal',
-            imageUrl: 'https://food.jumia.ma/blog/wp-content/uploads/2020/01/Capture-594x400.png',
+            imageUrl: 'https://www.groundzeroweb.com/wp-content/uploads/2016/09/Amazing-Food-Pictures-9.jpg',
             id: 9,
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 4500
@@ -83,25 +80,24 @@ class Categories extends React.Component  {
 
   render() {
       return (
-          <CategoriesContainer>
+          <VendorContainer>
               <div className='heading'>
-                  <h2>New on Jumia</h2>
+                  <h2>Vendors</h2>
               </div>
 
             
           <div className='categories-items'>
            
               <div className='preview'>
-              <div  className='arrow'>&#10094;</div>	
+              	
               {
-                  this.state.categories.filter(({ id}) => id < 5).map(({title, imageUrl, price, id}) => (
-                      <BrowseCategories key={id} title={title} imageUrl={imageUrl} price={price} />
+                  this.state.categories.filter(({ id}) => id > 5).map(({title, imageUrl, price, id}) => (
+                      <VendorCategories key={id} title={title} imageUrl={imageUrl} price={price} />
                   ))
               }
-              <div className='arrow'>&#10095;</div>
           </div>
           </div>
-          </CategoriesContainer>
+          </VendorContainer>
       )
   }
     }
@@ -109,4 +105,4 @@ class Categories extends React.Component  {
  
 
 
-export default Categories;
+export default Vendors;
