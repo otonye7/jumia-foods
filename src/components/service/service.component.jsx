@@ -32,7 +32,7 @@ const Service = ({history}) => {
             <div className='card-2'>
            <img  src={Diet} alt="" />
            <div className='card-2-container'>
-               <Link className='wine'>Wine</Link>
+               <Link to='/wine' className='wine'>Wine</Link>
                <p className='wine-para'>All the drinks you love and more</p>
            </div>
                
@@ -41,7 +41,7 @@ const Service = ({history}) => {
            <div className='card-3'>
            <img  src={Chef} alt="" />
            <div className='card-3-container'>
-               <Link className='wine'>Supermarkets</Link>
+               <Link to='/supermarkets' className='supermarkets'>Supermarkets</Link>
                <p className='wine-para'>Fresh grocies and everyday supermarkets</p>
            </div>  
            </div>
