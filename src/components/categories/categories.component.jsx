@@ -15,6 +15,7 @@ class Categories extends React.Component  {
             title: 'Kfc Spintex',
             imageUrl: 'https://blog.jumia.com.ng/wp-content/uploads/2016/10/Nkwobi.jpg',
             id: 1,
+            linkUrl: 'kfc',
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 3000
         },
@@ -22,6 +23,7 @@ class Categories extends React.Component  {
             title: 'Jumia party drinks',
             imageUrl: 'https://food.jumia.ma/blog/wp-content/uploads/2020/01/Capture-594x400.png',
             id: 2,
+            linkUrl: 'drinks',
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 2000
         },
@@ -29,6 +31,7 @@ class Categories extends React.Component  {
             title: 'Barcelos',
             imageUrl: 'https://i2.wp.com/techmoran.com/wp-content/uploads/2015/01/food-05.jpg?resize=795%2C385&ssl=1',
             id: 3,
+            linkUrl: 'barcelos',
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 3500
         },
@@ -36,6 +39,7 @@ class Categories extends React.Component  {
             title: 'Pizza inn',
             imageUrl: 'https://food.jumia.com.gh/blog/wp-content/uploads/2019/02/spaghetti-aragosta-633x400.jpg',
             id: 4,
+            linkUrl: 'pizza',
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 4000
         },
@@ -94,8 +98,8 @@ class Categories extends React.Component  {
               <div className='preview'>
               <div  className='arrow'>&#10094;</div>	
               {
-                  this.state.categories.filter(({ id}) => id < 5).map(({title, imageUrl, price, id}) => (
-                      <BrowseCategories key={id} title={title} imageUrl={imageUrl} price={price} />
+                  this.state.categories.filter(({ id}) => id < 5).map(({title, imageUrl, price, id, linkUrl}) => (
+                      <BrowseCategories key={id} title={title} imageUrl={imageUrl} price={price} linkUrl={linkUrl} />
                   ))
               }
               <div className='arrow'>&#10095;</div>

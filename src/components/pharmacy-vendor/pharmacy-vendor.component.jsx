@@ -1,42 +1,38 @@
 import React from 'react';
-import {  SuperMarketsContainer } from './supermarket-vendor.styles';
+import {  PharmacyContainer } from './pharmacy-vendor.styles';
 import VendorCategories from '../vendor-browse/vendor-browse.component';
 
-class SuperMarketsVendor extends React.Component  {
+class PharmacyVendor extends React.Component  {
     constructor() {
         super();
         
         this.state = {
         categories: [{
                 
-            title: 'bukka hut',
-            imageUrl: 'https://bukkahut.com/wp-content/uploads/2015/12/DSC_1135.jpg',
+            title: 'Xd',
+            imageUrl: 'http://d.ibtimes.co.uk/en/full/1619162/illicit-drugs.jpg',
             id: 1,
-            linkUrl: 'bukkahut',
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 3000
         },
         {
-            title: 'Kfc',
-            imageUrl: 'https://www.sickchirpse.com/wp-content/uploads/2018/07/KFC-1000x600.jpg',
+            title: 'DX',
+            imageUrl: 'https://img.medscape.com/thumbnail_library/is_170703_generic_drugs_800x600.jpg',
             id: 2,
-            linkUrl: 'kfc',
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 2000
         },
         {
-            title: 'Pizza hut',
-            imageUrl: 'http://epmgaa.media.clients.ellingtoncms.com/img/photos/2018/02/28/pizza__hut.jpg',
+            title: 'Coloured',
+            imageUrl: 'https://marketing-assets.avvo.com/uploads/sites/3/2015/09/synthetic-drugs_sized.jpg',
             id: 3,
-            linkUrl: 'pizzahut',
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 3500
         },
         {
-            title: 'Chick a fil',
-            imageUrl: 'https://www.southernsavers.com/wp-content/uploads/2015/09/chick-fil-a-1.png',
+            title: 'Capsules',
+            imageUrl: 'https://aforeverrecovery.com/wp-content/uploads/2017/06/skittles-party-drugs.jpg',
             id: 4,
-            linkUrl: 'chickafil',
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 4000
         },
@@ -84,7 +80,7 @@ class SuperMarketsVendor extends React.Component  {
 
   render() {
       return (
-          <SuperMarketsContainer>
+          <PharmacyContainer>
               <div className='heading'>
                   <h2>Vendors</h2>
               </div>
@@ -95,13 +91,13 @@ class SuperMarketsVendor extends React.Component  {
               <div className='preview'>
               	
               {
-                  this.state.categories.filter(({ id}) => id < 5).map(({title, imageUrl, price, id, linkUrl}) => (
-                      <VendorCategories key={id} title={title} imageUrl={imageUrl} price={price} linkUrl={linkUrl} />
+                  this.state.categories.filter(({ id}) => id < 5).map(({title, imageUrl, price, id}) => (
+                      <VendorCategories key={id} title={title} imageUrl={imageUrl} price={price} />
                   ))
               }
           </div>
           </div>
-          </SuperMarketsContainer>
+          </PharmacyContainer>
       )
   }
     }
@@ -109,4 +105,4 @@ class SuperMarketsVendor extends React.Component  {
  
 
 
-export default SuperMarketsVendor;
+export default PharmacyVendor;

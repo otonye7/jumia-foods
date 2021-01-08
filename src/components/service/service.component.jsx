@@ -53,7 +53,7 @@ const Service = ({history}) => {
            <div className='card-4'>
            <img  src={Pharmacy} alt="" />
            <div className='card-4-container'>
-               <Link className='pharmacy'>Pharmacy</Link>
+               <Link to='/pharmacy' className='pharmacy'>Pharmacy</Link>
                <p className='pharmacy-para'>Genuine medication and personal care from licensed pharmacies</p>
            </div>  
            </div>

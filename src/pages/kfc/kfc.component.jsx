@@ -1,42 +1,46 @@
 import React from 'react';
-import {  SuperMarketsContainer } from './supermarket-vendor.styles';
-import VendorCategories from '../vendor-browse/vendor-browse.component';
+import { KfcContainer} from './kfc.styles';
+import MenuItems from '../../components/menu-items/menu-items.component';
 
-class SuperMarketsVendor extends React.Component  {
+
+
+
+
+class KfcPage extends React.Component  {
     constructor() {
         super();
         
         this.state = {
         categories: [{
                 
-            title: 'bukka hut',
-            imageUrl: 'https://bukkahut.com/wp-content/uploads/2015/12/DSC_1135.jpg',
+            title: 'Kfc Spintex',
+            imageUrl: 'https://blog.jumia.com.ng/wp-content/uploads/2016/10/Nkwobi.jpg',
             id: 1,
-            linkUrl: 'bukkahut',
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 3000
+            
         },
         {
-            title: 'Kfc',
-            imageUrl: 'https://www.sickchirpse.com/wp-content/uploads/2018/07/KFC-1000x600.jpg',
+            title: 'Jumia party drinks',
+            imageUrl: 'https://food.jumia.ma/blog/wp-content/uploads/2020/01/Capture-594x400.png',
             id: 2,
-            linkUrl: 'kfc',
+            linkUrl: 'drinks',
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 2000
         },
         {
-            title: 'Pizza hut',
-            imageUrl: 'http://epmgaa.media.clients.ellingtoncms.com/img/photos/2018/02/28/pizza__hut.jpg',
+            title: 'Barcelos',
+            imageUrl: 'https://i2.wp.com/techmoran.com/wp-content/uploads/2015/01/food-05.jpg?resize=795%2C385&ssl=1',
             id: 3,
-            linkUrl: 'pizzahut',
+            linkUrl: 'barcelos',
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 3500
         },
         {
-            title: 'Chick a fil',
-            imageUrl: 'https://www.southernsavers.com/wp-content/uploads/2015/09/chick-fil-a-1.png',
+            title: 'Pizza inn',
+            imageUrl: 'https://food.jumia.com.gh/blog/wp-content/uploads/2019/02/spaghetti-aragosta-633x400.jpg',
             id: 4,
-            linkUrl: 'chickafil',
+            linkUrl: 'pizza',
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 4000
         },
@@ -48,32 +52,33 @@ class SuperMarketsVendor extends React.Component  {
             price: 2500
         },
         {
-            title: 'Scottish',
-            imageUrl: 'https://hiltonhotel-berlin.secretbox.fr/cache/images/product/eccbc87e4b5ce2fe28308fd9f2a7baf3-dylan-de-jonge-705929-unsplash.jpg',
+            title: 'chicken inn',
+            imageUrl: 'https://food.jumia.com.gh/images/jumia-for-corporate.jpg',
             id: 6,
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 3000
         },
         {
-            title: 'Jim Bean',
-            imageUrl: 'https://whiskeywatch.com/wp-content/uploads/2019/06/bourbon-whiskey.jpg',
+            title: 'Artist pizza',
+            imageUrl: 'https://startupafrica.co.za/wp-content/uploads/2020/10/kenya-food.jpg',
             id: 7,
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 6000
         },
         {
-            title: 'irish whiskey',
-            imageUrl: 'https://www.masterofmalt.com/blog/wp-content/uploads/2017/10/Irish-Whiskey-FEAT.jpg',
+            title: 'Vida e cafe',
+            imageUrl: 'https://food.jumia.ma/blog/wp-content/uploads/2020/01/Capture-594x400.png',
             id: 8,
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 3900
         },
         {
-            title: 'Cocktail',
-            imageUrl: 'https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/4/2857/files/2018/03/drinks-at-the-bar-1lagh1u.jpg',
+            title: 'Halal',
+            imageUrl: 'https://food.jumia.ma/blog/wp-content/uploads/2020/01/Capture-594x400.png',
             id: 9,
             description: 'Some good gist about this brand is as follows..., I\'ll tell tou the entire story at a later date',
             price: 4500
+    
         }]
         
     }
@@ -84,24 +89,21 @@ class SuperMarketsVendor extends React.Component  {
 
   render() {
       return (
-          <SuperMarketsContainer>
-              <div className='heading'>
-                  <h2>Vendors</h2>
-              </div>
+          <KfcContainer>
+             
 
             
           <div className='categories-items'>
            
               <div className='preview'>
-              	
               {
-                  this.state.categories.filter(({ id}) => id < 5).map(({title, imageUrl, price, id, linkUrl}) => (
-                      <VendorCategories key={id} title={title} imageUrl={imageUrl} price={price} linkUrl={linkUrl} />
+                  this.state.categories.filter(({ id}) => id === 1).map(({title, imageUrl, price, id, linkUrl}) => (
+                      <MenuItems key={id} title={title} imageUrl={imageUrl} price={price} linkUrl={linkUrl} />
                   ))
               }
           </div>
           </div>
-          </SuperMarketsContainer>
+          </KfcContainer>
       )
   }
     }
@@ -109,4 +111,4 @@ class SuperMarketsVendor extends React.Component  {
  
 
 
-export default SuperMarketsVendor;
+export default KfcPage;

@@ -1,24 +1,28 @@
 import React from 'react';
 import Header from '../../components/header/header.component';
 import SubHeader from '../../components/sub-header/subheader.component';
-import ResturantFilter from '../../components/resturant-filter/resturant-filter.component';
 import Categories from '../../components/categories/categories.component';
 import Vendors from '../../components/vendor/vendor-categories.component';
 import VendorsTwo from '../../components/vendor-two/vendor-two.component';
 import { ResturantContainer} from './resturant.styles';
+import { Route} from "react-router-dom";
+import KfcPage from '../kfc/kfc.component';
 
 
 
-const Resturantpage = () => {
+const Resturantpage = ({match}) => {
+    console.log(match)
     return (
         <ResturantContainer>
            <div className='resturant'>
-               <Header />
+              
+                <Header />
                <SubHeader />
-               <ResturantFilter />
-               <Categories />
-               <Vendors />
-               <VendorsTwo />
+               <Route exact path={`${match.path}`} component={Categories} />
+               <Route  path={`${match.path}/:Kfcid`} component={KfcPage} />
+               <Route exact path={`${match.path}`} component={Vendors} />
+               <Route exact path={`${match.path}`} component={VendorsTwo} />
+              
            </div>
         </ResturantContainer>
     )

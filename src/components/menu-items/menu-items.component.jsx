@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowseContainer} from './browse-categories.styles';
+import { BrowseContainer} from './menu-items.styles';
 import {withRouter} from 'react-router-dom';
 
-const BrowseCategories = ({title, imageUrl, price, history, linkUrl, match}) => (
+const MenuItems = ({title, imageUrl, price}) => (
     
     <BrowseContainer>
-    <div className='menu-items' onClick={() => history.push(`${match.url}/:${linkUrl}`)}>
+    <div className='menu-items' >
       <div className='background-image' style = {{
         backgroundImage: `url(${imageUrl})`
     }} >
@@ -17,9 +17,9 @@ const BrowseCategories = ({title, imageUrl, price, history, linkUrl, match}) => 
             <span className='title'>{title}</span>
             <span className='price'>{price}</span>
         </div>
-    
+        <button className='add-button'>Add To Cart</button>
     </BrowseContainer>
     
 );
 
-export default withRouter(BrowseCategories);
+export default withRouter(MenuItems);

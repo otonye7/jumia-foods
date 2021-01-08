@@ -3,6 +3,7 @@ import Homepage from './pages/homepage/homepage.component';
 import Resturantpage from './pages/resturant/resturant.component';
 import Winepage from './pages/wine/wine.component';
 import Supermarketspage from './pages/supermarkets/supermarkets.component';
+import Pharmacypage from './pages/pharmacy/pharmacy.component';
 import { Route, Switch} from "react-router-dom";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Route path="/resturant" component= {Resturantpage} />
       <Route path="/wine" component= {Winepage} />
       <Route path="/supermarkets" component= {Supermarketspage} />
+      <Route path="/pharmacy" component= {Pharmacypage} />
         <Resturantpage />
         <Winepage />
       </Switch>
