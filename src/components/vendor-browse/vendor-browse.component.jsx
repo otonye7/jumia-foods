@@ -16,6 +16,7 @@ const VendorCategories  = ({title, imageUrl, price}) => (
            <span className='title'>{title}</span>
            <span className='price'>{price}</span>
        </div>
+       <button className='cart-button'>ADD TO CART</button>
     </BrowseContainer>
 );
 

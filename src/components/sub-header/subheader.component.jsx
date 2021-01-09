@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { SubHeaderContainer} from './subheader.styles';
 
-import CustomButton from '../custom-button/custom-button.component';
+
 
 const SubHeader = () => {
     return(
@@ -19,7 +19,7 @@ const SubHeader = () => {
          </div>
 
          <div className='buttons'>
-              <CustomButton>Login</CustomButton>
+              
          </div>
          </div>
          

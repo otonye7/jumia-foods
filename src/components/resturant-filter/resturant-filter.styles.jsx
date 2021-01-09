@@ -12,11 +12,11 @@ justify-content: space-around;
 }
 
 .filter-container {
-    font-size: 11px;
+    font-size: 14px;
     text-decoration: none;
 }
 .arrow {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .Delivering {

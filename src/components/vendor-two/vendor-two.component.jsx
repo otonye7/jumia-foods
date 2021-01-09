@@ -2,6 +2,7 @@ import React from 'react';
 import {  VendorContainer } from './vendor-two.styles';
 import VendorCategories from '../vendor-browse/vendor-browse.component';
 
+
 class VendorsTwo extends React.Component  {
     constructor() {
         super();

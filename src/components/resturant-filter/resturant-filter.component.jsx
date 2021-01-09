@@ -15,28 +15,8 @@ const ResturantFilter = ({history}) => {
                 Vendor
             </Link>
         </div>
-
-        <div className='Delivering'>
-            <h3>Delivering To</h3>
-       
-       
-       <div className='bars'>
-        <div className='search'>
-            <input  className='text-a' label='search'  name="search" id="search" />
-        </div>
-
-        <div className='filter'>
-            <input  className='text-a' label='filter'  name="filter" id="filter" />
-        </div>
-
-        <select className='select'>
-                    <option value='latest'>Select your city</option>
-                    <option value='lagos'>Lagos</option>
-                    <option value='abuja'>Abuja</option>
-        </select>
-       </div>
         
-        </div>
+       
             
         </FilterContainer>
     )

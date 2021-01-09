@@ -20,14 +20,47 @@ export const BrowseContainer = styled.div`
     margin-bottom: 5px;
 }
 
+.cart-button {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 35px 0 35px;
+  font-size: 15px;
+  background-color: orange;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed";
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+}
+
 
 &:hover {
     cursor: pointer;
 
     & .image {
+      opacity: 0.6;
       transform: scale(1.1);
       transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
+
+    .custom-button {
+      opacity: 0.65;
+      display: flex;
+  }
 
     & .content {
       opacity: 0.9;
