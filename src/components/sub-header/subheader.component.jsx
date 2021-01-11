@@ -1,10 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { SubHeaderContainer} from './subheader.styles';
+import {connect} from 'react-redux';
+import CartIcon from '../cart-icon/cart-icon.component';
+import Cart from '../cart-dropdown/cart-dropdown.component';
 
-
-
-const SubHeader = () => {
+const SubHeader = ({hidden}) => {
     return(
      <SubHeaderContainer>
          <Link className='logo'>
@@ -19,18 +20,25 @@ const SubHeader = () => {
          </div>
 
          <div className='buttons'>
-              
+              <CartIcon />
          </div>
+         <div className='cart-dropdown'>
+             {
+              hidden ? null :
+              <Cart />   
+             }    
          </div>
-         
-
+          
+         </div>
         
-     </SubHeaderContainer>
-       
+     </SubHeaderContainer>  
    
     )
 
-    
     };
 
-export default SubHeader;
+const mapStateProps = ({cart: {hidden}}) => ({
+        hidden
+})
+
+export default connect(mapStateProps)(SubHeader);
