@@ -49,6 +49,8 @@ export const BrowseContainer = styled.div`
     border: none;
     outline: none;
     cursor: pointer;
+    position: absolute;
+    top: 255px;
 }
 
 

@@ -5,7 +5,7 @@ export const SubHeaderContainer = styled.div`
 height: 60px;
 display: flex;
 justify-content: space-around;
-width: 100%;
+width: 100vw;
 
 .logo {
     margin-top: 6rem;
@@ -13,7 +13,7 @@ width: 100%;
   }
 
   .nav-container {
-    width: 40vw;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -31,7 +31,6 @@ width: 100%;
 
   .buttons {
     display: flex;
-    align-self: center;
-    justify-content: center;
+    
   }
 `;
