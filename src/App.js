@@ -4,6 +4,7 @@ import Resturantpage from './pages/resturant/resturant.component';
 import Winepage from './pages/wine/wine.component';
 import Supermarketspage from './pages/supermarkets/supermarkets.component';
 import Pharmacypage from './pages/pharmacy/pharmacy.component';
+import Checkoutpage from './pages/checkout/checkout.component';
 import { Route, Switch} from "react-router-dom";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path="/wine" component= {Winepage} />
       <Route path="/supermarkets" component= {Supermarketspage} />
       <Route path="/pharmacy" component= {Pharmacypage} />
+      <Route exact path="/checkout" component= {Checkoutpage} />
         <Resturantpage />
         <Winepage />
       </Switch>
