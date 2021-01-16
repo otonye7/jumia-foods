@@ -2,6 +2,7 @@
 import styled  from 'styled-components';
 
 export const CheckoutContainer = styled.div `
+  
 .checkout-page {
     width: 55%;
     min-height: 90vh;

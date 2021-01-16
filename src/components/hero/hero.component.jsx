@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeroContainer} from './hero.styles';
-import Veg from  '../../assets/veg.png';
+import Veg from  '../../assets/beef.png';
 import FoodArticle from  '../../assets/food-article-weight-watchers-30.png';
 import Filter from '../filter/filter.component';
 
@@ -24,8 +24,8 @@ const Hero = () => {
             </div>
 
             <div className='hero-image-end'>
-                <img  src={FoodArticle} alt="" />
-                <img  src={FoodArticle} alt="" />
+                <img  src={Veg} alt="" />
+                <img  src={Veg} alt="" />
             </div>
 
             </div>
