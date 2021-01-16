@@ -33,5 +33,12 @@ export const CheckoutContainer = styled.div `
       margin-left: auto;
       font-size: 36px;
     }
+
+    .test-warning {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 24px;
+      color: red;
+    }
   }
 `;

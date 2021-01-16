@@ -42,7 +42,14 @@ const CheckoutPage = ({cartItems, total}) => (
             }
             
             <div className='total'>
-                <span>Total: #{total}</span>
+                Total: #{total}
+            </div>
+            <div className='test-warning'>
+                Please use the following test credit card for payment
+                <br />
+                4242 4242 4242 4242 exp-date: 01/21 - cvv 123
+                for the month use the current month e.g if we are in 
+                march use 03 /21, febuary 02/21
             </div>
           <StripeCheckoutButton price={total}/>  
         </div>
