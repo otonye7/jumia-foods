@@ -3,8 +3,12 @@ import styled from 'styled-components';
 
 export const SubscriptionContainer = styled.div`
 width: 100vw;
-height: 40vh;
+height: 55vh;
 background-color: #ff8c00;
+
+@media screen and (max-width: 800px) {
+    height: 59vh;
+  }
 
 .overall {
     justify-content: center;
@@ -28,11 +32,21 @@ background-color: #ff8c00;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+
+    @media screen and (max-width: 800px) {
+        display: inline-block;
+        
+      }
 }
 
 .select {
     width: 200px;
-    height: 9.4vh; 
+    height: 9.4vh;
+    justify-content: center; 
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+      }
 }
 
 .text-a {
@@ -41,6 +55,11 @@ background-color: #ff8c00;
     justify-content: center;
     text-align: center;
     display: flex;
+
+    @media screen and (max-width: 800px) {
+        margin-top: 1rem;
+        width: 100%;
+      }
 
 }
 
@@ -58,6 +77,11 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+
+    @media screen and (max-width: 800px) {
+        margin-top: 2rem;
+        width: 100%;
+      }
 }
 
 

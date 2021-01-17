@@ -8,11 +8,14 @@ height: 60%;
   display: flex;
 }
 
-.container {
-    
+.container { 
     justify-content: flex-start;
     margin-top: 2rem;
     width: 45vw;
+
+    @media screen and (max-width: 800px) {
+        display: none;
+      }
 }
 
 .end-container {

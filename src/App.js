@@ -6,10 +6,12 @@ import Supermarketspage from './pages/supermarkets/supermarkets.component';
 import Pharmacypage from './pages/pharmacy/pharmacy.component';
 import Checkoutpage from './pages/checkout/checkout.component';
 import { Route, Switch} from "react-router-dom";
+import {GlobalContainer} from './global.styles';
 
 function App() {
   return (
     <div>
+      <GlobalContainer />
       <Switch>
       <Route exact path="/" component={Homepage} />
       <Route path="/resturant" component= {Resturantpage} />

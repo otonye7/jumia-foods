@@ -16,12 +16,19 @@ export const FilterContainer = styled.div`
   .sort {
       display: flex;
       justify-content: space-between;
-      
+
+      @media screen and (max-width: 800px) {
+        display: inline-block;
+      }
   }
   
   .select {
-      width: 29vw;
+      width: 120%;
       height: 7vh;
-      
+
+      @media screen and (max-width: 800px) {
+        margin-top: 1rem;
+        width: 115%;
+      }
   }
 `;

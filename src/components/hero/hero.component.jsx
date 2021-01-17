@@ -1,7 +1,6 @@
-import React from 'react';
+  import React from 'react';
 import { HeroContainer} from './hero.styles';
 import Veg from  '../../assets/beef.png';
-import FoodArticle from  '../../assets/food-article-weight-watchers-30.png';
 import Filter from '../filter/filter.component';
 
 

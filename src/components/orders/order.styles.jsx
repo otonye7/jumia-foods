@@ -8,6 +8,10 @@ background-color: #ff8c00;
 display: flex;
 justify-content: center;
 
+@media screen and (max-width: 800px) {
+    height: 50vh;
+  }
+
 .order-text {
     display: flex;
     color: white;
@@ -17,6 +21,10 @@ justify-content: center;
     display: flex;
     color: white;
     width: 50vw;
+
+    @media screen and (max-width: 800px) {
+        display: none;
+      }
 }
 
 .container {
@@ -27,6 +35,10 @@ justify-content: center;
     display: flex;
     width: 30vw;
     justify-content: space-around;
+
+    @media screen and (max-width: 800px) {
+        display: inline-block;
+      }
 }
 
 button {
@@ -43,5 +55,10 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+
+    @media screen and (max-width: 800px) {
+       width: 150%;
+       margin-top: 1rem;
+      }
 }
 `;

@@ -12,9 +12,13 @@ height: 60%;
 }
 
 .hero-text {
-    width: 64vw;
+    width: 100%;
     justify-content: center;
     padding: 3em;
+
+    @media screen and (max-width: 800px) { 
+        
+      }
 }
 
 .up-text {
@@ -28,23 +32,30 @@ height: 60%;
     font-size: 21px;
     align-items: center;
     justify-content: center;
-    margin-left: 6rem;
+    margin-left: 6px;
     
     
 }
 
 .hero-image {
-    width: 18vw;
+    width: 17%;
     
+    @media screen and (max-width: 800px) {
+        display: none;
+      }
 }
 
 img {
-    width: 14vw;
+    width: 100%;
     height: auto;
    
 }
 
 .hero-image-end {
-    width: 18vw; 
+    width: 17%;
+    
+    @media screen and (max-width: 800px) {
+        display: none;
+      }
 }
 `;

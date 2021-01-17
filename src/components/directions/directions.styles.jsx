@@ -6,6 +6,10 @@ width: 100vw;
 height: 100%;
 justify-content: center;
 
+@media screen and (max-width: 800px) {
+    display: none;
+  }
+
 .container {
     display: flex;
     justify-content: space-evenly;

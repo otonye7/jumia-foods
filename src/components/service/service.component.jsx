@@ -3,7 +3,6 @@ import { ServiceContainer} from './service.styles';
 import Burger from  '../../assets/hamburger.svg';
 import Diet from  '../../assets/diet.svg';
 import Chef from  '../../assets/cake.svg';
-import Shop from  '../../assets/add-shopping-cart.png';
 import Pharmacy from  '../../assets/pharmacy-shop.png';
 import  { Link} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
@@ -60,13 +59,7 @@ const Service = ({history}) => {
            
            
 
-           <div className='card-5'>
-           <img  src={Shop} alt="" />
-           <div className='card-5-container'>
-               <Link className='shop'>Shopping</Link>
-               <p className='shop-para'>Gift and electronic and more</p>
-           </div>  
-           </div>
+           
            </div>
 
         </ServiceContainer>
