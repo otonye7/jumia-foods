@@ -5,7 +5,7 @@ export const SubHeaderContainer = styled.div`
 height: 60px;
 display: flex;
 justify-content: space-around;
-width: 100vw;
+width: 100%;
 
 .logo {
     margin-top: 6rem;

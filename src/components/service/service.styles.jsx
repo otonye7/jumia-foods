@@ -14,7 +14,7 @@ width: 100%;
    }
 
 .card-container {
-    width: 120%;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,7 @@ width: 100%;
   }
 
   .down-card {
-    width: 120%;
+    width: 100%;
     height: auto;
     display: flex;
     

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const FooterContainer = styled.div`
-width: 100vw;
+width: 100%;
 height: 70vh;
 background-color: black;
 color: white;
@@ -12,7 +12,7 @@ justify-content: space-evenly;
 
 @media screen and (max-width: 800px) {
     display: inline-block;
-    height: 100vh;
+    height: auto;
   }
 .container {
    

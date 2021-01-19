@@ -7,7 +7,7 @@ height: 55vh;
 background-color: #ff8c00;
 
 @media screen and (max-width: 800px) {
-    height: 59vh;
+    height: auto;
   }
 
 .overall {

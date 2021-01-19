@@ -8,7 +8,7 @@ height: 60%;
 
 .container {
     display: flex;
-    justify-content: space-evenly;
+    
 }
 
 .hero-text {
@@ -24,6 +24,7 @@ height: 60%;
 .up-text {
     font-size: 41px;
     align-items: center;
+    display: flex;
     justify-content: center;
     
 }
@@ -31,6 +32,7 @@ height: 60%;
 .down-text {
     font-size: 21px;
     align-items: center;
+    display: flex;
     justify-content: center;
     margin-left: 6px;
     

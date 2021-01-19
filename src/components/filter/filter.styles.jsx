@@ -23,12 +23,16 @@ export const FilterContainer = styled.div`
   }
   
   .select {
-      width: 120%;
-      height: 7vh;
+      width: 360px;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
 
       @media screen and (max-width: 800px) {
         margin-top: 1rem;
         width: 115%;
       }
   }
+
+  
 `;

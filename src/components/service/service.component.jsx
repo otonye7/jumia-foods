@@ -7,7 +7,7 @@ import Pharmacy from  '../../assets/pharmacy-shop.png';
 import  { Link} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
 
-const Service = ({history}) => {
+const Service = () => {
     return (
         <ServiceContainer>
            
