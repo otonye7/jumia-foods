@@ -3,7 +3,8 @@ import { FooterContainer} from './footer.styles';
 
 const Footer = () => {
     return (
-        <FooterContainer> 
+        <FooterContainer>
+            <div className='footer-container'>
            <div className='container'>
                <div className='city'>
                    <h2 className='title'>City</h2>
@@ -102,6 +103,16 @@ const Footer = () => {
                    <span>Become a rider!</span>
                </div>
 
+           </div>
+
+           <div className='contact'>
+               <h6>Contact Us</h6>
+               <span>otonyeamie@gmail.com</span>
+           </div>
+           </div>
+
+           <div className='samo-foods'>
+               <h6>© Copyright 2021 Samo Food is a registered trademark</h6>
            </div>
         </FooterContainer>
     )

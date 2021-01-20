@@ -43,7 +43,7 @@ width: 100%;
     width: 30%;
 
     @media screen and (max-width: 800px) {
-      width: 105%;
+      width: auto;
     }
   }
 
@@ -53,7 +53,7 @@ width: 100%;
     width: 30%;
 
     @media screen and (max-width: 800px) {
-      width: 105%;
+      width: auto;
     }
   }
 
@@ -63,7 +63,7 @@ width: 100%;
     width: 30%;
 
     @media screen and (max-width: 800px) {
-      width: 105%;
+      width: auto;
     }
   }
 
@@ -73,7 +73,7 @@ width: 100%;
     width: 30%;
 
     @media screen and (max-width: 800px) {
-      width: 105%;
+      width: auto;
     }
   }
 

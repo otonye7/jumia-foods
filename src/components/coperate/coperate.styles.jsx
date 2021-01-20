@@ -1,17 +1,24 @@
 import styled from 'styled-components';
 
 export const CoperateContainer = styled.div`
-width: 100vw;
+width: 100%;
 height: 60%;
 
 .overall {
   display: flex;
+  justify-content: center;
+  
+  @media screen and (max-width: 800px) {
+    display: flex;
+    jsutfify-content: center;
+  }
+
 }
 
 .container { 
     justify-content: flex-start;
     margin-top: 2rem;
-    width: 45vw;
+    width: 30%;
 
     @media screen and (max-width: 800px) {
         display: none;
@@ -20,12 +27,12 @@ height: 60%;
 
 .end-container {
     justify-content: flex-end;
-    width: 45vw;
+    width: 25%;
 }
 
 .text {
     margin-top: 2rem;
-    display: block;
+    display: inline-block;
     justify-content: center;
     text-align: center;
     
@@ -34,6 +41,7 @@ height: 60%;
 .up-text {
     
     align-items: center;
+    display: flex;
     justify-content: center;
     
 }
@@ -49,7 +57,7 @@ height: 60%;
 
 
 img {
-    width: 18vw;
+    width: 170px;
     height: auto;
 }
 
@@ -57,7 +65,7 @@ button {
     min-width: 10px;
     width: auto;
     border-radius: 5px;
-    height: 50px;
+    height: 40px;
     letter-spacing: 0.5px;
     line-height: 28px;
     padding: 0 18px 0 18px;

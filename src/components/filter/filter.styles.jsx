@@ -30,7 +30,7 @@ export const FilterContainer = styled.div`
 
       @media screen and (max-width: 800px) {
         margin-top: 1rem;
-        width: 115%;
+        width: 200px;
       }
   }
 

@@ -17,18 +17,19 @@ const Subscription = () => {
            <br />
 
            <div className='sort'>
+               <div className='city-container'>
                    <select className='select'>
                     <option value='latest'>Select your city</option>
                     <option value='lagos'>Lagos</option>
                     <option value='abuja'>Abuja</option>
                    </select>
-
-                 <div className='text-a'>
-                     <input  className='text-a' label='email'  name="email" id="email" />
                 </div>
 
+
                 <div className='c-buttons'>
+                    <div className='subscribe-button'>
                     <button>Subscribe Newsletter</button>
+                    </div>
                 </div>   
                </div>
 

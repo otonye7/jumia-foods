@@ -2,23 +2,30 @@ import styled from 'styled-components';
 
 
 export const OrderContainer = styled.div`
-width: 100vw;
-height: 60vh;
+width: 100%;
+height: 100%;
 background-color: #ff8c00;
 display: flex;
 justify-content: center;
 
 @media screen and (max-width: 800px) {
-    height: 50vh;
+    height: auto;
   }
 
 .order-text {
     display: flex;
     color: white;
+    justify-content: center;
+
+    @media screen and (max-width: 800px) {
+      display: flex;
+      justify-content: center;
+    }
 }
 
 .paragraph {
     display: flex;
+    justify-content: center;
     color: white;
     width: 50vw;
 
@@ -33,7 +40,7 @@ justify-content: center;
 
 .c-buttons {
     display: flex;
-    width: 30vw;
+    width: 70%;
     justify-content: space-around;
 
     @media screen and (max-width: 800px) {
@@ -41,11 +48,21 @@ justify-content: center;
       }
 }
 
+.overall-button {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 800px) {
+      display: flex;
+      justify-content: center;
+    }
+}
+
 button {
     min-width: 10px;
     width: auto;
     border-radius: 5px;
-    height: 50px;
+    height: 38px;
     letter-spacing: 0.5px;
     line-height: 28px;
     padding: 0 18px 0 18px;
@@ -57,7 +74,7 @@ button {
     cursor: pointer;
 
     @media screen and (max-width: 800px) {
-       width: 150%;
+       width: 180px;
        margin-top: 1rem;
       }
 }

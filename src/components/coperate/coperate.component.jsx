@@ -13,7 +13,7 @@ const Hero = () => {
            </div>
 
             <div className='text'>
-                <h1 className='up-text'>Jumia Food for Corporate</h1>
+                <h1 className='up-text'>Samo Food for Corporate</h1>
                 <span className='down-text'>Order lunch, fuel for meetings or late-night deliveries to the office. Your favorite vendors coming to a desk near you.</span>
                 <br />
                 <div className='c-buttons'>

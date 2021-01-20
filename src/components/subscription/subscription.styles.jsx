@@ -2,12 +2,13 @@ import styled from 'styled-components';
 
 
 export const SubscriptionContainer = styled.div`
-width: 100vw;
-height: 55vh;
+width: 100%;
+height: auto;
 background-color: #ff8c00;
 
 @media screen and (max-width: 800px) {
     height: auto;
+    width: auto;
   }
 
 .overall {
@@ -32,6 +33,7 @@ background-color: #ff8c00;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    margin: 1px;
 
     @media screen and (max-width: 800px) {
         display: inline-block;
@@ -39,35 +41,39 @@ background-color: #ff8c00;
       }
 }
 
+.city-container {
+
+    @media screen and (max-width: 800px) {
+        display: flex;
+        justify-content: center;
+      }
+}
+
+.email-container {
+
+    @media screen and (max-width: 800px) {
+        display: flex;
+        justify-content: center;
+      }
+}
+
 .select {
     width: 200px;
-    height: 9.4vh;
+    height: 40px;
     justify-content: center; 
 
-    @media screen and (max-width: 800px) {
-        width: 100%;
+    @media screen and (max-width: 900px) {
+        width: 220px;
       }
 }
 
-.text-a {
-    width: 200px;
-    height: 8.3vh; 
-    justify-content: center;
-    text-align: center;
-    display: flex;
 
-    @media screen and (max-width: 800px) {
-        margin-top: 1rem;
-        width: 100%;
-      }
-
-}
 
 button {
     min-width: 10px;
     width: auto;
     border-radius: 5px;
-    height: 50px;
+    height: 38px;
     letter-spacing: 0.5px;
     line-height: 28px;
     padding: 0 18px 0 18px;
@@ -79,11 +85,18 @@ button {
     cursor: pointer;
 
     @media screen and (max-width: 800px) {
-        margin-top: 2rem;
-        width: 100%;
+        margin-top: 1rem;
+        width: auto;
       }
 }
 
+.subscribe-button {
+
+    @media screen and (max-width: 800px) {
+        display: flex;
+        justify-content: center;
+      }
+}
 
 
 `;
