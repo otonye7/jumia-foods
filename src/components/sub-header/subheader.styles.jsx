@@ -13,7 +13,7 @@ width: 100%;
   }
 
   .nav-container {
-    width: 100%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: flex-end;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const HeroContainer = styled.div`
-width: 100vw;
+width: 100%;
 height: 60%;
  
 
@@ -12,7 +12,7 @@ height: 60%;
 }
 
 .hero-text {
-    width: 100%;
+    width: 66%;
     justify-content: center;
     padding: 3em;
 
@@ -22,10 +22,16 @@ height: 60%;
 }
 
 .up-text {
-    font-size: 41px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.125;
     align-items: center;
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 800px) {
+        display: block;
+      }
     
 }
 
@@ -36,7 +42,10 @@ height: 60%;
     justify-content: center;
     margin-left: 6px;
     
-    
+    @media screen and (max-width: 800px) {
+        display: none;
+      }
+      
 }
 
 .hero-image {

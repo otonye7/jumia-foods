@@ -7,6 +7,7 @@ import Pharmacypage from './pages/pharmacy/pharmacy.component';
 import Checkoutpage from './pages/checkout/checkout.component';
 import { Route, Switch} from "react-router-dom";
 import {GlobalContainer} from './global.styles';
+import './App.css';
 
 function App() {
   return (

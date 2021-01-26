@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const SubscriptionContainer = styled.div`
 width: 100%;
-height: auto;
+height: 230px;
 background-color: #ff8c00;
 
 @media screen and (max-width: 800px) {

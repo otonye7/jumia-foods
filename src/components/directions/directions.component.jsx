@@ -16,22 +16,22 @@ const Directions = () => {
        <div className='overall'>
            
        <div className='image-container'>
-           <div className='location'>
+           <div className='bike'>
                <img  src={Location} alt="" /> 
            </div>
             <div className='loc-text'>
-                <h2>Set delivery location</h2>
-                <span>Select the location where you want us to deliver</span>
+                <h2 className='text-directions'>Set delivery location</h2>
+                <span className='text-description'>Select the location where you want us to deliver</span>
             </div>
         </div>
 
         <div className='image-2-container'>
-            <div className='phone'>
+            <div className='bike'>
              <img  src={Phone} alt="" />   
             </div>
             <div className='loc-text'>
-                <h2>Choose the product</h2>
-                <span>Browse shops that deliver near you</span>
+                <h2 className='text-direction'>Choose the product</h2>
+                <span className='text-description'>Browse shops that deliver near you</span>
             </div>
         </div>
 
@@ -40,8 +40,8 @@ const Directions = () => {
              <img  src={Bike} alt="" />   
             </div>
             <div className='loc-text'>
-                <h2>Receive it at your doorstep</h2>
-                <span>Your order will be delivered to you in no time</span>
+                <h2 className='text-direction'>Receive it at your doorstep</h2>
+                <span className='text-description'>Your order will be delivered to you in no time</span>
             </div>
         </div>
 

@@ -43,7 +43,13 @@ width: 100%;
     width: 30%;
 
     @media screen and (max-width: 800px) {
-      width: auto;
+      width: 300px;
+    }
+
+    @media screen and (min-width: 500px) and (max-width: 800px){
+       position: relative;
+       left: 18px;
+       width: 520px;
     }
   }
 
@@ -53,8 +59,15 @@ width: 100%;
     width: 30%;
 
     @media screen and (max-width: 800px) {
-      width: auto;
+      width: 300px;
     }
+
+    @media screen and (min-width: 500px) and (max-width: 800px){
+       position: relative;
+       left: 18px;
+       width: 520px;
+    }
+
   }
 
   .card-3 {
@@ -63,8 +76,15 @@ width: 100%;
     width: 30%;
 
     @media screen and (max-width: 800px) {
-      width: auto;
+      width: 300px;
     }
+
+    @media screen and (min-width: 500px) and (max-width: 800px){
+       position: relative;
+       left: 18px;
+       width: 520px;
+    }
+
   }
 
   .card-4 {
@@ -73,8 +93,15 @@ width: 100%;
     width: 30%;
 
     @media screen and (max-width: 800px) {
-      width: auto;
+      width: 300px;
     }
+
+    @media screen and (min-width: 500px) and (max-width: 800px){
+       position: relative;
+       left: 18px;
+       width: 520px;
+    }
+
   }
 
   .card-5 {
@@ -97,5 +124,6 @@ width: 100%;
     height: auto;
    
 }
+
 `;
 

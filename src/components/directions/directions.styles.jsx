@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const DirectionsContainer = styled.div`
-width: 100vw;
+width: 100%;
 height: 100%;
 justify-content: center;
 
@@ -23,9 +23,9 @@ justify-content: center;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 1.3rem;
-
 }
+
+
 
 .image-container {
     display: block;
@@ -43,16 +43,18 @@ justify-content: center;
     width: 25%;
 }
 
-.location {
-    margin-left: 6rem;
+.loc-text {
+    display: inline-block;
+    justify-content: center;
 }
 
 .bike {
-    margin-left: 6rem;
+    display: flex;
+    justify-content: center;
 }
 
 .phone {
-    margin-left: 6rem;
+    
 }
 
 img {

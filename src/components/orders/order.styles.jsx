@@ -3,10 +3,14 @@ import styled from 'styled-components';
 
 export const OrderContainer = styled.div`
 width: 100%;
-height: 100%;
+height: 260px;
 background-color: #ff8c00;
 display: flex;
 justify-content: center;
+
+@media screen and (max-width: 800px) {
+        display: none;
+      }
 
 @media screen and (max-width: 800px) {
     height: auto;

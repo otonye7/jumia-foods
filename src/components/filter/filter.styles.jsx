@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const FilterContainer = styled.div`
    height: 100%;
+   width: 100%;
    
   .container {
    display: flex;
@@ -18,7 +19,7 @@ export const FilterContainer = styled.div`
       justify-content: space-between;
 
       @media screen and (max-width: 800px) {
-        display: inline-block;
+        display: block;
       }
   }
   
@@ -30,7 +31,7 @@ export const FilterContainer = styled.div`
 
       @media screen and (max-width: 800px) {
         margin-top: 1rem;
-        width: 200px;
+        width: 320px;
       }
   }
 

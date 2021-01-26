@@ -9,7 +9,7 @@ const SubHeader = ({hidden}) => {
     return(
      <SubHeaderContainer>
          <Link className='logo'>
-            
+           
          </Link>
          
          <div className='nav-container'>
