@@ -20,7 +20,7 @@ const Directions = () => {
                <img  src={Location} alt="" /> 
            </div>
             <div className='loc-text'>
-                <h2 className='text-directions'>Set delivery location</h2>
+                <h2 className='text-direction'>Set delivery location</h2>
                 <span className='text-description'>Select the location where you want us to deliver</span>
             </div>
         </div>

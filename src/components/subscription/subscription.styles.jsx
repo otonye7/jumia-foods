@@ -7,9 +7,14 @@ height: 230px;
 background-color: #ff8c00;
 
 @media screen and (max-width: 800px) {
-    height: auto;
+    height: 330px;
     width: auto;
   }
+
+
+  @media screen and (min-width: 500px) and (max-width: 800px){
+       height: 280px;
+    }
 
 .overall {
     justify-content: center;
@@ -20,6 +25,11 @@ background-color: #ff8c00;
     justify-content: center;
     align-items: center;
     color: white;
+
+    @media screen and (max-width: 800px) {
+  
+       
+  }
 }
 
 .paragraph {
@@ -27,6 +37,10 @@ background-color: #ff8c00;
     justify-content: center;
     align-items: center;
     color: white;
+
+    @media screen and (max-width: 800px) {
+       display: none;
+  }
 }
 
 .sort {
@@ -37,7 +51,6 @@ background-color: #ff8c00;
 
     @media screen and (max-width: 800px) {
         display: inline-block;
-        
       }
 }
 

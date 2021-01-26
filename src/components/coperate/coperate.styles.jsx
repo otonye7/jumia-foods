@@ -35,6 +35,12 @@ height: 60%;
     display: inline-block;
     justify-content: center;
     text-align: center;
+
+    
+    @media screen and (min-width: 500px) and (max-width: 800px){
+       position: relative;
+       left: 35px;
+    }
     
 }
 

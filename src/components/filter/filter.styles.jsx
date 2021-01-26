@@ -21,6 +21,8 @@ export const FilterContainer = styled.div`
       @media screen and (max-width: 800px) {
         display: block;
       }
+
+      
   }
   
   .select {
@@ -31,8 +33,15 @@ export const FilterContainer = styled.div`
 
       @media screen and (max-width: 800px) {
         margin-top: 1rem;
-        width: 320px;
+        width: 300px;
       }
+
+      
+    @media screen and (min-width: 500px) and (max-width: 800px){
+       width: 530px;
+    }
+
+   
   }
 
   

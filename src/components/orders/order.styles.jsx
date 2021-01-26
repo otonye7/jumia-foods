@@ -28,10 +28,12 @@ justify-content: center;
 }
 
 .paragraph {
-    display: flex;
+    display: block;
     justify-content: center;
     color: white;
-    width: 50vw;
+    width: 520px;
+    position: relative;
+    left: 13px;
 
     @media screen and (max-width: 800px) {
         display: none;

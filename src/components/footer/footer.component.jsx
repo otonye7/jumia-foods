@@ -112,7 +112,7 @@ const Footer = () => {
            </div>
 
            <div className='samo-foods'>
-               <h6>© Copyright 2021 Samo Food is a registered trademark</h6>
+               <h6>© Copyright 2021 S^mo Food is a registered trademark</h6>
            </div>
         </FooterContainer>
     )

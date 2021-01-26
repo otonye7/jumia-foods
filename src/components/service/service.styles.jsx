@@ -32,6 +32,11 @@ width: 100%;
     
     justify-content: space-between;
     margin-top: 1rem;
+
+    @media screen and (max-width: 800px) {
+      display: inline-block;
+      
+    }
   }
   
   

@@ -19,8 +19,18 @@ justify-content: center;
     justify-content: center;
 }
 
+.text-direction {
+    position: relative;
+    left: 45px;
+}
+
+.text-description {
+    position: relative;
+    left: 40px;
+}
+
 .overall {
-    width: 100%;
+    width: 98%;
     display: flex;
     justify-content: space-around;
 }
