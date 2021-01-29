@@ -36,6 +36,16 @@ export const FilterContainer = styled.div`
         width: 300px;
       }
 
+      @media screen and (max-width: 280px) {
+        margin-top: 1rem;
+        width: 200px;
+      }
+
+      @media screen and (max-width: 320px) {
+        margin-top: 1rem;
+        width: 240px;
+      }
+
       
     @media screen and (min-width: 500px) and (max-width: 800px){
        width: 530px;

@@ -15,12 +15,20 @@ height: 100%;
 .categories-items {
    flex-direction: column;
    display: flex;
+
+   @media screen and (max-width: 800px) {
+      display: inline-block;
+    }
   
 }
 
 .preview {
     display: flex;
     justify-content: space-around;
+
+    @media screen and (max-width: 800px) {
+      display: inline-block;
+    }
  }
     
 `;

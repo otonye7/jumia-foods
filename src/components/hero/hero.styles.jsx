@@ -67,5 +67,6 @@ img {
     @media screen and (max-width: 800px) {
         display: none;
       }
+
 }
 `;
