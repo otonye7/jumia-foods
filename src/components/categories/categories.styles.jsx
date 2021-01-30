@@ -19,11 +19,25 @@ height: 100%;
 .categories-items {
    flex-direction: column;
    display: flex;
+
+   @media screen and (max-width: 800px) {
+      
+   }
 }
 
 .preview {
     display: flex;
     justify-content: space-around;
+
+    @media screen and (max-width: 800px) {
+      display: flex;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      padding: 20px;
+      object-fit: contain;
+      transition: transform 450ms;
+      margin-right: 10px;
+  }
  }
     
 `;

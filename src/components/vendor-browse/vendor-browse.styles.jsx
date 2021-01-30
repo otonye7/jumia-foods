@@ -10,6 +10,10 @@ export const BrowseContainer = styled.div`
     height: 200px;
     align-items: center;
     position: relative;
+
+    @media screen and (max-width: 800px) {
+      width: 100vw;
+    }
 }
 
 .image {

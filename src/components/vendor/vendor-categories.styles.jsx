@@ -21,6 +21,10 @@ height: 100%;
 .preview {
     display: flex;
     justify-content: space-around;
+
+    @media screen and (max-width: 800px) {
+    display: inline-block;
+  }
  }
     
 `;
