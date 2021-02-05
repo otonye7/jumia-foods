@@ -24,6 +24,7 @@ background-color: #ff8c00;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     color: white;
 
     @media screen and (max-width: 800px) {

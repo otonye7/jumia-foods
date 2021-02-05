@@ -13,7 +13,6 @@ export const CartIconContainer = styled.div `
   
     .shopping-icon {
       width: 24px;
-      height: 24px;
     }
   
     .item-count {

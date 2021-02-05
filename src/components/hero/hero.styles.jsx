@@ -3,15 +3,15 @@ import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
 width: 100%;
-height: 60%;
 
 .container {
+    width: 100%;
     display: flex;
     
 }
 
 .hero-text {
-    width: 66%;
+    width: 63%;
     justify-content: center;
     padding: 3em;
 
@@ -39,7 +39,7 @@ height: 60%;
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-left: 6px;
+    margin-left: 2em;
     
     @media screen and (max-width: 800px) {
         display: none;
@@ -47,8 +47,9 @@ height: 60%;
       
 }
 
+
 .hero-image {
-    width: 17%;
+    width: 15%;
     
     @media screen and (max-width: 800px) {
         display: none;
@@ -62,7 +63,7 @@ img {
 }
 
 .hero-image-end {
-    width: 17%;
+    width: 15%;
     
     @media screen and (max-width: 800px) {
         display: none;

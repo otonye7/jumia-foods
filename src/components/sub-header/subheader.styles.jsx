@@ -2,26 +2,28 @@ import styled from 'styled-components';
 
 
 export const SubHeaderContainer = styled.div`
-height: 60px;
+width: 100%;
 display: flex;
 justify-content: space-around;
-width: 100%;
+
 
 .logo {
     margin-top: 6rem;
     align-self: center;
   }
 
+  .navbar {
+    width: 100%;
+  }
+
   .nav-container {
-    width: 60%;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
    
-  .navbar {
-    
-  }
+  
 
   .nav-options {
     padding: 25px 28px;
