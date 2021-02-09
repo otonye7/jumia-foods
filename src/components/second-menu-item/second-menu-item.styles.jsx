@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const BrowseContainer = styled.div`
 
-.vendor-items {
+.menu-items {
     width: 20vw;
     display: flex;
     flex-direction: column;
@@ -16,12 +16,16 @@ export const BrowseContainer = styled.div`
     }
 }
 
-.image {
+.background-image {
     width: 100%;
     height: 95%;
     background-size: cover;
     background-position: center;
     margin-bottom: 5px;
+
+    @media screen and (max-width: 800px) {
+       width: 100%;
+  }
 }
 
 .cart-button {
@@ -52,19 +56,18 @@ export const BrowseContainer = styled.div`
 }
 
 
+
+
 &:hover {
     cursor: pointer;
 
-    & .image {
+    & .background-image {
       opacity: 0.6;
       transform: scale(1.1);
       transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
 
-    .custom-button {
-      opacity: 0.65;
-      display: flex;
-  }
+    
 
     & .content {
       opacity: 0.9;

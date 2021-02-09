@@ -20,28 +20,16 @@ background-color: #ff8c00;
     justify-content: center;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: white;
-
-    @media screen and (max-width: 800px) {
-  
-       
-  }
+.subscribe-container {
+  width: 100%;
+  text-align: center;
+  color: white;
 }
 
 .paragraph {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-    @media screen and (max-width: 800px) {
-       display: none;
-  }
+  @media screen and (max-width: 800px) {
+        display: none;
+      }
 }
 
 .sort {
@@ -100,7 +88,7 @@ button {
 
     @media screen and (max-width: 800px) {
         margin-top: 1rem;
-        width: auto;
+        width: 220px;
       }
 }
 

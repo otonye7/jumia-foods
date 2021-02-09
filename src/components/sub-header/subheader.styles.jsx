@@ -20,7 +20,12 @@ justify-content: space-around;
     width: 20%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    overflow-y: hidden;
+
+    @media screen and (max-width: 800px) {
+        width: 40%;
+      }
   }
    
   
@@ -29,10 +34,10 @@ justify-content: space-around;
     padding: 25px 28px;
     text-decoration: none;
     color: black;
+    overflow-y: hidden;
   }
 
   .buttons {
     display: flex;
-    
   }
 `;

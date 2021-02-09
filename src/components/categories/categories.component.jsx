@@ -1,7 +1,8 @@
 import React from 'react';
 import {  CategoriesContainer } from './categories.styles';
-import BrowseCategories from '../browse-categories/browse-categories.component';
+import SecondMenuItem from '../second-menu-item/second-menu-item.component';
 import FOOD_DATA from '../food/food.data.jsx';
+
 
 
 
@@ -30,7 +31,7 @@ class Categories extends React.Component  {
               <div  className='arrow'>&#10094;</div>	
               {
                   categories.filter((category, id) => id < 4).map((category) => (
-                      <BrowseCategories key={category.id}  category={category} />
+                      <SecondMenuItem key={category.id}  category={category} />
                   ))
               }
               <div className='arrow'>&#10095;</div>

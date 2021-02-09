@@ -14,9 +14,7 @@ const SubHeader = ({hidden}) => {
          
          <div className='nav-container'>
              <div className='navbar'>
-             <Link className='nav-options'>
-                 Help
-             </Link>
+             
          </div>
 
          <div className='buttons'>
