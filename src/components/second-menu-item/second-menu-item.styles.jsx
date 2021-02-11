@@ -8,11 +8,13 @@ export const BrowseContainer = styled.div`
     display: flex;
     flex-direction: column;
     height: 200px;
+    overflow-y: hidden;
     align-items: center;
     position: relative;
+    
 
     @media screen and (max-width: 800px) {
-      width: 100vw;
+    
     }
 }
 

@@ -10,6 +10,7 @@ export const CheckoutContainer = styled.div `
     font-size: 20px;
     align-items: center;
 
+
     .image-container {
         width: 23%;
         padding-right: 15px;

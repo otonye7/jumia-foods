@@ -14,6 +14,12 @@ export const CartDropDownContainer = styled.div `
     right: 40px;
     z-index: 5;
 
+    @media screen and (max-width: 800px) {
+     top: 150px;
+      
+    }
+
+
     .empty-message {
         font-size: 18px;
         margin: 50px auto;

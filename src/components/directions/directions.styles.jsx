@@ -19,39 +19,15 @@ justify-content: center;
     justify-content: center;
 }
 
-.text-direction {
-    position: relative;
-    left: 45px;
-}
-
-.text-description {
-    position: relative;
-    left: 40px;
-}
-
 .overall {
-    width: 98%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
 
 
-.image-container {
-    display: block;
-    width: 25%;
-}
 
-.image-2-container {
-    display: block;
-    width: 25%;
-
-}
-
-.image-3-container {
-    display: block;
-    width: 25%;
-}
 
 .loc-text {
     display: inline-block;

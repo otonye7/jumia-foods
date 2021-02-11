@@ -43,12 +43,7 @@ const Directions = () => {
                 <h2 className='text-direction'>Receive it at your doorstep</h2>
                 <span className='text-description'>Your order will be delivered to you in no time</span>
             </div>
-        </div>
-
-
-        
-
-            
+        </div>           
 </div>
 
         </DirectionsContainer>

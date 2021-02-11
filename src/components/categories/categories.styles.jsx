@@ -28,16 +28,9 @@ width: 100vw;
 .preview {
     display: flex;
     justify-content: space-around;
-    width: 100%;
 
     @media screen and (max-width: 800px) {
-      width: 100%;
-      display: flex;
-      overflow-y: hidden;
-      overflow-x: scroll;
-      object-fit: contain;
-      transition: transform 450ms;
-      margin-right: 10px;
+      
   }
  }
     
