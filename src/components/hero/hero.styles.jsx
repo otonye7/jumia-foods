@@ -4,14 +4,16 @@ import styled from 'styled-components';
 export const HeroContainer = styled.div`
 width: 100%;
 
+
 .container {
     width: 100%;
     display: flex;
+    justify-content: space-around;
     
 }
 
 .hero-text {
-    width: 63%;
+    width: 60%;
     justify-content: center;
     padding: 3em;
 
@@ -21,8 +23,8 @@ width: 100%;
 }
 
 .up-text {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 500;
     line-height: 1.125;
     align-items: center;
     display: flex;
@@ -36,6 +38,7 @@ width: 100%;
 
 .down-text {
     font-size: 21px;
+    font-weight: 500;
     align-items: center;
     display: flex;
     justify-content: center;

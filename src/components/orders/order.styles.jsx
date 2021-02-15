@@ -3,10 +3,8 @@ import styled from 'styled-components';
 
 export const OrderContainer = styled.div`
 width: 100%;
-height: 260px;
 background-color: #ff8c00;
-display: flex;
-justify-content: center;
+
 
 @media screen and (max-width: 800px) {
         display: none;
@@ -28,12 +26,11 @@ justify-content: center;
 }
 
 .paragraph {
-    display: block;
-    justify-content: center;
-    color: white;
+   display: block;
+    text-align: center;
     width: 520px;
-    position: relative;
-    left: 13px;
+    color: white;
+    margin-left: 410px;
 
     @media screen and (max-width: 800px) {
         display: none;
@@ -41,18 +38,20 @@ justify-content: center;
 }
 
 .container {
-    
+ text-align: center;
 }
 
 .c-buttons {
     display: flex;
-    width: 70%;
+    width: 30%;
     justify-content: space-around;
+    padding-bottom: 1em;
 
     @media screen and (max-width: 800px) {
         display: inline-block;
       }
 }
+
 
 .overall-button {
   display: flex;

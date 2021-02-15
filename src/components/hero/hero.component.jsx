@@ -16,7 +16,7 @@ const Hero = () => {
 
             <div className='hero-text'>
                 <h1 className='up-text'>Everything you need, delivered now</h1>
-                <h3 className='down-text'>Discover local vendors that deliver to your doorstep</h3>
+                <span className='down-text'>Discover local vendors that deliver to your doorstep</span>
 
                  <Filter />
                  

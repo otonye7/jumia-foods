@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const SubscriptionContainer = styled.div`
 width: 100%;
-height: 230px;
+
 background-color: #ff8c00;
 
 @media screen and (max-width: 800px) {
@@ -44,6 +44,10 @@ background-color: #ff8c00;
 }
 
 .city-container {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1em;
 
     @media screen and (max-width: 800px) {
         display: flex;

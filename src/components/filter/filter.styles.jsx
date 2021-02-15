@@ -26,7 +26,7 @@ export const FilterContainer = styled.div`
   }
   
   .select {
-      width: 360px;
+      width: 400px;
       height: 40px;
       display: flex;
       justify-content: space-between;

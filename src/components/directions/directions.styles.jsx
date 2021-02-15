@@ -11,12 +11,7 @@ justify-content: center;
   }
 
 .container {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.text-container {
-    justify-content: center;
+    text-align: center;
 }
 
 .overall {
@@ -30,8 +25,7 @@ justify-content: center;
 
 
 .loc-text {
-    display: inline-block;
-    justify-content: center;
+    text-align: center;
 }
 
 .bike {
