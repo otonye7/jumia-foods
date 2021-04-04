@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 import {addItem} from '../../redux/cart/cart.action';
 
 const BrowseCategories = ({category, addItem}) => {
+  console.log(category)
   const { title, price, imageUrl } = category;
    return (
   

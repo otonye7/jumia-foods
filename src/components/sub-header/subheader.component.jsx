@@ -8,27 +8,25 @@ import Cart from '../cart-dropdown/cart-dropdown.component';
 const SubHeader = ({hidden}) => {
     return(
      <SubHeaderContainer>
-         <Link className='logo'>
-           
-         </Link>
-         
-         <div className='nav-container'>
-             <div className='navbar'>
-             
-         </div>
+         <div className='container'>
+             <div className='title'>
+                 <Link className='title-link'>S^MO FOODS</Link>
+             </div>
 
-         <div className='buttons'>
-              <CartIcon />
-         </div>
+             <div className='cart-container'>
+                 <Link className='help-text'>Help</Link>
+
+            <div className='cart-icon'>
+                 <CartIcon />
+             </div>
          <div className='cart-dropdown'>
              {
               hidden ? null :
               <Cart />   
              }    
          </div>
-          
-         </div>
-        
+       </div>
+    </div>
      </SubHeaderContainer>  
    
     )

@@ -2,42 +2,45 @@ import styled from 'styled-components';
 
 
 export const SubHeaderContainer = styled.div`
-width: 100%;
-display: flex;
-justify-content: space-around;
+  width: 100%;
 
-
-.logo {
-    margin-top: 6rem;
-    align-self: center;
-  }
-
-  .navbar {
-    width: 100%;
-  }
-
-  .nav-container {
-    width: 20%;
+  .container {
+    width: 98%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    overflow-y: hidden;
-
-    @media screen and (max-width: 800px) {
-        width: 40%;
-      }
+    margin: 0 auto;
   }
-   
-  
 
-  .nav-options {
-    padding: 25px 28px;
+  .title {
+    padding-top: 0.5rem;
+  }
+
+  .title-link {
+    color: orange;
     text-decoration: none;
-    color: black;
-    overflow-y: hidden;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+    font-style: normal;
   }
 
-  .buttons {
+  .cart-container {
     display: flex;
+    justify-content: space-around;
+  }
+  
+  .cart-icon {
+    /* padding-top: 0.2rem; */
+  }
+
+  .help-text {
+    padding: 1rem;
+    text-decoration: none;
+    /* margin-bottom: 2rem; */
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+    font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+    font-style: normal;
   }
 `;

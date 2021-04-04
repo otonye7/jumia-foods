@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../../components/header/header.component';
 import Hero from '../../components/hero/hero.component';
+import HeroText from '../../components/hero-middle/hero-middle.component';
+import HeroEnd from '../../components/hero-end/hero-end.component';
 import SubHeader from '../../components/sub-header/subheader.component';
 import Directions from '../../components/directions/directions.component';
 import Subscription from '../../components/subscription/subscription.component';
@@ -14,8 +16,13 @@ const Homepage = () => {
         <HomepageContainer>
         <div className='homepage'>
         <Header />
+        <br />
         <SubHeader />
-        <Hero />
+        <div className='hero'>
+          <Hero />
+          <HeroText />
+          <HeroEnd />
+        </div>
         <Directions />
         <br />
         <Subscription />

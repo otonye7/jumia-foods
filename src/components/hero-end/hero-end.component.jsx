@@ -1,9 +1,9 @@
-  import React from 'react';
-import { HeroContainer} from './hero.styles';
+import React from 'react';
+import { HeroContainer} from './hero-end.styles';
 
 
 
-const Hero = () => {
+const HeroEnd = () => {
     return (
         <HeroContainer>
                 <div className='first-image'></div>
@@ -12,4 +12,4 @@ const Hero = () => {
 };
 
 
-export default Hero;
+export default HeroEnd;

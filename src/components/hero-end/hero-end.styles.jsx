@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Jumia from  '../../assets/jumiafood.png';
+import Jumia from  '../../assets/services.jpg';
 
 
 export const HeroContainer = styled.div`
