@@ -2,9 +2,54 @@ import styled from 'styled-components';
 
 
 export const ServiceContainer = styled.div`
-width: 100%;
+display: flex;
+justify-content: space-between;
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px){
+     display: flex;
+     flex-direction: column;
+}
+
+.card {
+  width: 32%;
+  height: 10rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+
+  @media screen and (max-width: 767px){
+     width: 100%;
+}
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  color: orange;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.125;
+  font-family: Muli,Merriweather,Georgia,serif;
+}
+
+.card-text {
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.125;
+  font-family: Muli,Merriweather,Georgia,serif;
+}
+
+img {
+    width: 13%;
+    height: auto;
+   
+} 
+
+/* @media screen and (max-width: 800px) {
   width: 80%;
   
 }
@@ -46,6 +91,7 @@ width: 100%;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 30%;
+    border: 2px solid red;
 
     @media screen and (max-width: 800px) {
       width: 300px;
@@ -161,7 +207,7 @@ width: 100%;
     width: 16%;
     height: auto;
    
-}
+} */
 
 `;
 

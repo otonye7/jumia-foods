@@ -6,6 +6,9 @@ export const HeroContainer = styled.div`
 width: 200px;
 height:30rem;
 
+@media screen and (max-width: 767px){
+      display: none;
+}
 
 .container {
     width: 100%;

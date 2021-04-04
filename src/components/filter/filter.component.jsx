@@ -6,26 +6,21 @@ const Filter = () => {
     return(
         <FilterContainer>
 
-            <div className='container'>
-              <div className='text'>
-                 <h3 className='delivering-text'>Delivering to</h3>
-               </div>  
-            </div>
-
             <div className='sort'>
-                   <select className='select'>
+                   <select className='selectone'>
                     <option value='latest'>Select your city</option>
                     <option value='lagos'>Lagos</option>
                     <option value='abuja'>Abuja</option>
                    </select>
 
-                   <select className='select'>
+                   <select className='selecttwo'>
                     <option value='latest'>Select your area</option>
+                    <option value='latest'>Lekki</option>
+                    <option value='latest'>Gwarinpa</option>
                    </select>
                     
                </div>
 
-               <Service />
            
         </FilterContainer>
        
