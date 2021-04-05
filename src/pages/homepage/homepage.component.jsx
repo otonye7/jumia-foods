@@ -23,7 +23,10 @@ const Homepage = () => {
           <HeroText />
           <HeroEnd />
         </div>
+        <br />
         <Directions />
+        <br />
+        <br />
         <br />
         <Subscription />
         <br />

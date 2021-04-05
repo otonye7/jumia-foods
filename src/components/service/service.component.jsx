@@ -3,7 +3,6 @@ import { ServiceContainer} from './service.styles';
 import Burger from  '../../assets/hamburger.svg';
 import Diet from  '../../assets/diet.svg';
 import Chef from  '../../assets/drink.jpg';
-import Pharmacy from  '../../assets/pharmacy-shop.png';
 import  { Link} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
 

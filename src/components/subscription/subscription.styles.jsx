@@ -2,21 +2,63 @@ import styled from 'styled-components';
 
 
 export const SubscriptionContainer = styled.div`
-width: 100%;
+width: 99%;
+background-color: #f68b1e;
+margin: 0 auto;
 
-background-color: #ff8c00;
+.container {
+  align-content: center;
+  text-align: center;
+}
 
-@media screen and (max-width: 800px) {
-    height: 330px;
-    width: auto;
-  }
+.subscribe-text {
+    color: white;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 600;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
+}
 
+.subscribe-description {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
+}
 
-  @media screen and (min-width: 500px) and (max-width: 800px){
-       height: 280px;
-    }
+.selectone {
+  width: 15%;
+  height: 4rem;
 
-.overall {
+  @media screen and (max-width: 767px){
+     width: 100%;
+}
+}
+
+/* .form {
+  width: 100%;
+} */
+
+.form {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  resize: vertical;
+}
+
+.firstname {
+  width: 18%;
+  height: 3.5rem;
+}
+
+.sub-container {
+  display: flex;
+}
+/* .overall {
     justify-content: center;
 }
 
@@ -27,9 +69,7 @@ background-color: #ff8c00;
 }
 
 .paragraph {
-  @media screen and (max-width: 800px) {
-        display: none;
-      }
+ 
 }
 
 .sort {
@@ -37,10 +77,6 @@ background-color: #ff8c00;
     display: flex;
     justify-content: space-evenly;
     margin: 1px;
-
-    @media screen and (max-width: 800px) {
-        display: inline-block;
-      }
 }
 
 .city-container {
@@ -48,19 +84,10 @@ background-color: #ff8c00;
   display: flex;
   justify-content: space-around;
   padding-bottom: 1em;
-
-    @media screen and (max-width: 800px) {
-        display: flex;
-        justify-content: center;
-      }
 }
 
 .email-container {
 
-    @media screen and (max-width: 800px) {
-        display: flex;
-        justify-content: center;
-      }
 }
 
 .select {
@@ -69,40 +96,9 @@ background-color: #ff8c00;
     justify-content: center; 
 
     @media screen and (max-width: 900px) {
-        width: 220px;
+        /* width: 220px; */
       }
-}
-
-
-
-button {
-    min-width: 10px;
-    width: auto;
-    border-radius: 5px;
-    height: 38px;
-    letter-spacing: 0.5px;
-    line-height: 28px;
-    padding: 0 18px 0 18px;
-    font-size: 12px;
-    background-color: black;
-    color: white;
-    border: none;
-    outline: none;
-    cursor: pointer;
-
-    @media screen and (max-width: 800px) {
-        margin-top: 1rem;
-        width: 220px;
-      }
-}
-
-.subscribe-button {
-
-    @media screen and (max-width: 800px) {
-        display: flex;
-        justify-content: center;
-      }
-}
+} */
 
 
 `;

@@ -5,6 +5,7 @@
 
 div {
   /* border: 1px solid red; */
+  overflow: hidden;
   margin: 0;
   overflow-x: hidden;
 }

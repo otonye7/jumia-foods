@@ -3,6 +3,7 @@ import { HeroContainer} from './hero-middle.styles';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import Filter from '../../components/filter/filter.component';
 import Service from '../../components/service/service.component';
+import ServiceBottom from '../../components/service-bottom/service-bottom.component';
 
 
 
@@ -31,6 +32,8 @@ const HeroText= () => {
                         <h2 className='service'>Choose A Service</h2>
                         <br />
                         <Service />
+                        <br />
+                        <ServiceBottom />
                     </div>
                 </div>
         </HeroContainer>
