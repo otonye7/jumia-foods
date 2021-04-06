@@ -6,6 +6,7 @@ import HeroEnd from '../../components/hero-end/hero-end.component';
 import SubHeader from '../../components/sub-header/subheader.component';
 import Directions from '../../components/directions/directions.component';
 import Subscription from '../../components/subscription/subscription.component';
+import CoperateBegining from '../../components/coperate-begining/coperate-begining.component';
 import Coperate from '../../components/coperate/coperate.component';
 import Order from '../../components/orders/order.component';
 import Footer from '../../components/footer/footer.component';
@@ -30,7 +31,10 @@ const Homepage = () => {
         <br />
         <Subscription />
         <br />
-        <Coperate />
+        <div className='coperate'>
+            <CoperateBegining />
+            <Coperate /> 
+        </div>
         <br />
         <br />
         <Order />

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const SubscriptionContainer = styled.div`
 width: 99%;
+height: 15rem;
 background-color: #f68b1e;
 margin: 0 auto;
 
@@ -30,8 +31,9 @@ margin: 0 auto;
 }
 
 .selectone {
-  width: 15%;
+  width: 180px;
   height: 4rem;
+  margin-right: 1rem;
 
   @media screen and (max-width: 767px){
      width: 100%;
@@ -43,20 +45,29 @@ margin: 0 auto;
 } */
 
 .form {
-  width: 100%;
+  
   border: 1px solid #ccc;
   border-radius: 4px; 
   box-sizing: border-box; 
-  resize: vertical;
+  z-index: 2;
 }
 
 .firstname {
-  width: 18%;
+  width: 200px;
   height: 3.5rem;
 }
 
 .sub-container {
   display: flex;
+  justify-content: center; 
+}
+
+.button {
+  margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
 }
 /* .overall {
     justify-content: center;

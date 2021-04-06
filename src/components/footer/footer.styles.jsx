@@ -27,4 +27,18 @@ color: white;
     }
 }
 
+.title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
+}
+
+.list {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
+}
+
 `;

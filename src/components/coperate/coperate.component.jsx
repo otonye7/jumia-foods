@@ -1,12 +1,23 @@
 import React from 'react';
-import Beef from  '../../assets/beef.png';
 import { CoperateContainer} from './coperate.styles';
+import CustomButton from '../custom-button/custom-button.component';
 
 
 const Hero = () => {
     return (
         <CoperateContainer>
-            <div className='overall'>
+            <div className='container'>
+                <div className='container-text'>
+                    <h2 className='title'>S^mo Food for Corporate</h2>
+                    <span className='title-description'>Order lunch, fuel for meetings or late-night deliveries to the office. Your favorite vendors coming to a desk near you.</span>
+                    <br />
+                    <br />
+                    <div className='buttons'>
+                        <CustomButton>Get Started</CustomButton>
+                    </div>
+                </div>
+            </div>
+            {/* <div className='overall'>
                 
             <div className='container'>
                 <img  src={Beef} alt="" />
@@ -24,7 +35,7 @@ const Hero = () => {
             <div className='end-container'>
                 
            </div>
-            </div>
+            </div> */}
 
             
             

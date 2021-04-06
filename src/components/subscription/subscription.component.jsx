@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { SubscriptionContainer} from './subscription.styles';
+import CustomButton from '../custom-button/custom-button.component';
 
 const Subscription = () => {
     return (
@@ -18,43 +19,16 @@ const Subscription = () => {
                     <option value='abuja'>Abuja</option>
                    </select>
             </div>
-
+            <br />
             <div className="form-container">
             <form className='form'>
                 <input type="text" id="fname" className="firstname" placeholder="Email" />
              </form>
            </div>
-         </div>
-            {/* <div className = 'overall'>
-           
-           <div className='subscribe-container'>
-           <div className='container'>
-               <h1 className='subscribe'>Subscribe to our newsletter today!</h1>
-               <span className='text'>Don't miss out on our great offers and Receive deals from all our top vendors via e-mail</span>
-           </div>
-           
-           </div>
            <br />
-
-           <div className='sort'>
-               <div className='city-container'>
-                   <select className='select'>
-                    <option value='latest'>Select your city</option>
-                    <option value='lagos'>Lagos</option>
-                    <option value='abuja'>Abuja</option>
-                   </select>
-
-                <div className='subscribe-button'>
-                    
-                </div>
-            </div>
-
-
-                 
-               </div>
-
-
-               </div> */}
+           <CustomButton className='button'>Subscribe Newsletter</CustomButton>
+         </div>
+           
         </SubscriptionContainer>
     )
 };

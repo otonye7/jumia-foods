@@ -1,10 +1,84 @@
 import styled from 'styled-components';
-
+import Jumia from  '../../assets/small.png';
 
 export const OrderContainer = styled.div`
-width: 100%;
-background-color: #ff8c00;
+background-color: #f68b1e;
+height: 26rem;
+display: flex;
+position: relative;
 
+
+.container {
+  width: 60%;
+
+  @media screen and (max-width: 767px){
+     width: 100%;
+}
+}
+
+.title {
+  width: 75%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 767px){
+      width: 100%;
+}
+}
+
+.title-header {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
+
+    @media screen and (max-width: 767px){
+      text-align: center;
+}
+
+}
+
+.description {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
+
+    @media screen and (max-width: 767px){
+      display: none;
+}
+}
+
+.image {
+    width: 40%;
+    right: 200px;
+    height: 100%;
+    position: absolute;
+    background-image: url(${Jumia});
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (max-width: 767px){
+      display: none;
+}
+   }
+
+  .buttons {
+    display: flex;
+  }
+
+  .android {
+    border: 1px solid white;
+    background-color: #f68b1e;
+  }
+
+  .apple {
+    margin-left: 1rem;
+    border: 1px solid white;
+    background-color: #f68b1e;
+  }
+/* 
 
 @media screen and (max-width: 800px) {
         display: none;
@@ -82,5 +156,5 @@ button {
        width: 180px;
        margin-top: 1rem;
       }
-}
+} */
 `;

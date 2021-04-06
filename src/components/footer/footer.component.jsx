@@ -79,7 +79,7 @@ const Footer = () => {
 
            <div className='jumia-container'>
                <div className='jumia'>
-                   <h2 className='title'>Jumia Food</h2>
+                   <h2 className='title'>S^MO Food</h2>
                </div>
                <div className='list'>
                    <span>About</span>

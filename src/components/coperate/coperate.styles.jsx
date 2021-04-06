@@ -1,7 +1,46 @@
 import styled from 'styled-components';
 
 export const CoperateContainer = styled.div`
-width: 100%;
+width: 65%;
+margin: 0 auto;
+padding-top: 6rem;
+
+@media screen and (max-width: 800px) {
+    width: 100%;
+  }
+
+.container {
+    width: 40%;
+    padding-left: 6rem;
+
+    @media screen and (max-width: 800px) {
+       width: 100%;
+       padding-left: 0rem;
+  }
+
+}
+
+.container-text {
+    text-align: center;
+    align-content: center;
+}
+
+.title {
+    color: #4a4a4a;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
+}
+
+.title-description {
+    color: #4a4a4a;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
+}
+/* width: 100%;
 height: 60%;
 
 .overall {
@@ -81,6 +120,6 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
-}
+} */
 
 `;
