@@ -5,6 +5,7 @@ import cartReducer from './cart/cart.reducer';
 import resturantReducer from './resturant/resturant.reducer';
 import wineReducer from './wine/wine.reducer';
 import foodReducer from './food/food.reducer';
+import supermarketReducer from './supermarket/supermarket.reducer';
 
 const persistConfig  = {
     key: 'root',
@@ -16,7 +17,8 @@ const rootReducer = combineReducers({
     cart: cartReducer,
     resturant: resturantReducer,
     wine: wineReducer,
-    food: foodReducer
+    food: foodReducer,
+    supermarket: supermarketReducer
 });
 
 export default persistReducer(persistConfig, rootReducer)

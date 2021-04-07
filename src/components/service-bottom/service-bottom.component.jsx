@@ -15,7 +15,7 @@ const ServiceBottom = () => {
                 <img src={Pharmacy} alt="Avatar"  />
                 <br />
              <div className="container">
-                <Link className='card-title'>Supermarket</Link>
+                <Link to='/supermarkets' className='card-title'>Supermarket</Link>
                 <span className='card-text'>Fresh grocies and everyday essential</span>
              </div>
             </div>
@@ -25,7 +25,7 @@ const ServiceBottom = () => {
                <img src={Drugs} alt="Avatar"  /> 
                 <br />
              <div className="container">
-                <Link className='card-title'>Pharmacy</Link>
+                <Link to='./pharmacy' className='card-title'>Pharmacy</Link>
                 <span className='card-text'>Geniune medication and personal care from licensed pharmacies</span>
              </div>
             </div>
