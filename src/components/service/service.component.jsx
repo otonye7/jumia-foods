@@ -39,7 +39,7 @@ const Service = () => {
                 <Link to='/wine' className='card-title'>Jumia Drinks</Link>
                 <span className='card-text'>All drinks you love and more</span>
              </div>
-            </div>
+            </div> 
 
         </ServiceContainer>
     )
