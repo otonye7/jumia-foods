@@ -25,7 +25,7 @@ const Service = () => {
                 <img src={Diet} alt="Avatar"  />
                 <br />
              <div className="container">
-                <Link className='card-title'>Food Festival</Link>
+                <Link to='/food' className='card-title'>Food Festival</Link>
                 <span className='card-text'>Up to 50% off. Flash Sales and amazing discounts</span>
              </div>
             </div>
