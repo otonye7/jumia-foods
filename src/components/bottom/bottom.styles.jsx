@@ -6,6 +6,11 @@ margin: 0 auto;
 display: flex;
 justify-content: space-between;
 
+@media screen and (max-width: 767px){
+      display: flex;
+      flex-direction: column;
+}
+
 .terms {
     color: #4a4a4a;
     font-size: 1rem;

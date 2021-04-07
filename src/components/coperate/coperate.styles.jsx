@@ -7,6 +7,7 @@ padding-top: 6rem;
 
 @media screen and (max-width: 800px) {
     width: 100%;
+    padding-top: 2rem;
   }
 
 .container {

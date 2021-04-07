@@ -16,10 +16,12 @@ export const MenuItemContainer = styled.div`
       align-items: center;
       position: relative;
 
-  /* @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px){
     width:100%;
+    display: flex;
+    flex-direction: column;
     
-} */
+}
 
       &:hover {
       cursor: pointer;

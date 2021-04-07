@@ -23,6 +23,7 @@ justify-content: space-between;
 
   @media screen and (max-width: 767px){
      width: 100%;
+     margin-left: 0rem;
 }
 }
 

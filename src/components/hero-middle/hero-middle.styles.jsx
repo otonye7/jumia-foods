@@ -27,6 +27,10 @@ width: 65%;
     text-align: center;
     line-height: 1.125;
     font-family: Muli,Merriweather,Georgia,serif;
+
+@media screen and (max-width: 767px){
+     display: none;
+}
 }
 
 .delivering {

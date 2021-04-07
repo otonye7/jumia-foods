@@ -7,6 +7,10 @@ height: 15rem;
 background-color: #f68b1e;
 margin: 0 auto;
 
+@media screen and (max-width: 767px){
+     height: 28rem;
+}
+
 .container {
   align-content: center;
   text-align: center;
@@ -45,7 +49,7 @@ margin: 0 auto;
 } */
 
 .form {
-  
+  width: 100%;
   border: 1px solid #ccc;
   border-radius: 4px; 
   box-sizing: border-box; 
@@ -55,11 +59,20 @@ margin: 0 auto;
 .firstname {
   width: 200px;
   height: 3.5rem;
+
+  @media screen and (max-width: 767px){
+     width: 100%;
+}
 }
 
 .sub-container {
   display: flex;
   justify-content: center; 
+
+  @media screen and (max-width: 767px){
+     display: flex;
+     flex-direction: column;
+}
 }
 
 .button {
@@ -68,48 +81,12 @@ margin: 0 auto;
     font-weight: 600;
     line-height: 1.125;
     font-family: Muli,Merriweather,Georgia,serif;
+
+@media screen and (max-width: 767px){
+     width: 100%;
+     margin-left: 0rem;
 }
-/* .overall {
-    justify-content: center;
 }
-
-.subscribe-container {
-  width: 100%;
-  text-align: center;
-  color: white;
-}
-
-.paragraph {
- 
-}
-
-.sort {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1px;
-}
-
-.city-container {
-  width: 30%;
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 1em;
-}
-
-.email-container {
-
-}
-
-.select {
-    width: 200px;
-    height: 40px;
-    justify-content: center; 
-
-    @media screen and (max-width: 900px) {
-        /* width: 220px; */
-      }
-} */
 
 
 `;

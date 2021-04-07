@@ -7,6 +7,13 @@ height: 26rem;
 display: flex;
 position: relative;
 
+@media screen and (max-width: 767px){
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     height: 20rem;
+}
+
 
 .container {
   width: 60%;
@@ -66,17 +73,30 @@ position: relative;
 
   .buttons {
     display: flex;
+
+  @media screen and (max-width: 767px){
+     flex-direction: column;
+}
   }
 
   .android {
     border: 1px solid white;
     background-color: #f68b1e;
+
+    @media screen and (max-width: 767px){
+     width: 100%;
+}
   }
 
   .apple {
     margin-left: 1rem;
     border: 1px solid white;
     background-color: #f68b1e;
+
+ @media screen and (max-width: 767px){
+     width: 100%;
+     margin-left: 0rem;
+}
   }
 /* 
 
