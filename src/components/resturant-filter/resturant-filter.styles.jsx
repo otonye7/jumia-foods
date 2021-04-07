@@ -6,7 +6,7 @@ width: 100%;
 justify-content: space-around;
 
 .link-container {
-    width: 98%;
+    width: 96%;
     display: flex;
     text-decoration: none;
     margin: 0 auto;

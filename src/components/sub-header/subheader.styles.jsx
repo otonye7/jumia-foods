@@ -5,7 +5,7 @@ export const SubHeaderContainer = styled.div`
   width: 100%;
 
   .container {
-    width: 98%;
+    width: 96%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
