@@ -1,48 +1,43 @@
 import React from 'react';
 import {  CategoriesContainer } from './categories.styles';
-import SecondMenuItem from '../second-menu-item/second-menu-item.component';
-import FOOD_DATA from '../food/food.data.jsx';
+import {resturants} from '../../redux/resturant/resturant.selector';
+import {connect} from 'react-redux';
+import {createStructuredSelector} from 'reselect';
+import MenuItems from '../menu-items/menu-items.component';
 
 
 
+const  Categories = ({sections}) => {
 
-class Categories extends React.Component  {
-    constructor() {
-        super();
-        
-        this.state = {
-       categories: FOOD_DATA
-    }
+	return ( 
+        <CategoriesContainer>
+            <div className='food-text'>
+                <h2 className ='fastfood-text'>
+                    Fast Food Deals
+                </h2>
+            </div>
 
-}
+            <div className='categories-items'>
+                    
+                    <div className='preview'>
 
-  render() {
-      const {categories} = this.state;
-      return (
-          <CategoriesContainer>
-              <div className='heading'>
-                  <h2>New on Jumia</h2>
-              </div>
+                        {   
+                            sections.filter((section, id) => id < 4).map(({id,  ...otherSectionProps}) =>  (
+                                <MenuItems key={id}  {...otherSectionProps}/>
+                            )) 
 
-            
-          <div className='categories-items'>
-           
-              <div className='preview'>
-              <div  className='arrow'>&#10094;</div>	
-              {
-                  categories.filter((category, id) => id < 4).map((category) => (
-                      <SecondMenuItem key={category.id}  category={category} />
-                  ))
-              }
-              <div className='arrow'>&#10095;</div>
-          </div>
-          </div>
-          </CategoriesContainer>
-      )
-  }
-    }
-	
+                        }
+                    </div>
+                </div>
+        </CategoriesContainer>
+	);
+};
+
+const mapStateToProps = createStructuredSelector({
+    sections: resturants
+})
+
+
+export default connect(mapStateToProps)(Categories);
  
 
-
-export default Categories;

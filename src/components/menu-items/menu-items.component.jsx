@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowseContainer} from './menu-items.styles';
+import { MenuItemContainer} from './menu-items.styles';
 import {withRouter} from 'react-router-dom';
 
-const MenuItems = ({title, imageUrl, price}) => (
+const MenuItems = ({title, imageUrl, price, rating, side}) => (
     
-    <BrowseContainer>
+    <MenuItemContainer>
     <div className='menu-items' >
       <div className='background-image' style = {{
         backgroundImage: `url(${imageUrl})`
@@ -15,10 +15,14 @@ const MenuItems = ({title, imageUrl, price}) => (
 
     <div className='content'>
             <span className='title'>{title}</span>
-            <span className='price'>{price}</span>
+            <div className='other'>
+              <span className='price'>${price}</span>  
+              <span className='price'>{rating}</span>
+              <span className='price'>{side}</span>
+            </div>
+            
         </div>
-        <button className='add-button'>Add To Cart</button>
-    </BrowseContainer>
+    </MenuItemContainer>
     
 );
 

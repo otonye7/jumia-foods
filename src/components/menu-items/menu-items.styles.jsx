@@ -1,72 +1,118 @@
 import styled from 'styled-components';
 
 
-export const BrowseContainer = styled.div`
+export const MenuItemContainer = styled.div`
 
-.menu-items {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    align-items: center;
-    position: relative;
+ 
+@media screen and (max-width: 767px){
+    
 }
+  .menu-items {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      height: 250px;
+      align-items: center;
+      position: relative;
 
-.background-image {
+  /* @media screen and (max-width: 767px){
+    width:100%;
+    
+} */
+
+      &:hover {
+      cursor: pointer;
+
+      & .background-image {
+        transform: scale(1.1);
+        transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+      }
+
+      & .content {
+        opacity: 0.9;
+      }
+    }
+    
+
+    &.large {
+      height: 380px;
+    }
+  
+    &:first-child {
+      margin-right: 7.5px;
+    }
+  
+    &:last-child {
+      margin-left: 7.5px;
+    }
+
+  }
+
+  .background-image {
+      width: 100%;
+      max-width: 500px; 
+      overflow: hidden;
+      height: 100%;
+      max-height: 250px;
+      background-size: cover;
+      background-position: center;
+
+/* @media screen and (max-width: 767px){
     width: 100%;
-    height: 95%;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 5px;
-}
+    height:80%;
+    margin: 0 auto;
+} */
 
-&:hover {
+  }
+
+  &:hover {
     .image {
         opacity: 0.6;
     }
-
-    .custom-button {
-        opacity: 0.65;
-        display: flex;
-    }
 }
 
-.add-button {
-    width: 80%;
-    opacity: 0.5;
-    position: absolute;
-    top: 255px;
-    display: none;
-    min-width: 10px;
-    border-radius: 5px;
-    height: 50px;
-    letter-spacing: 0.5px;
-    line-height: 28px;
-    padding: 0 18px 0 18px;
-    font-size: 12px;
-    background-color: black;
-    color: black;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    position: absolute;
-    top: 255px;
-}
+  .content {
+      width: 90%;
+      height: 25%;
+      display: flex;
+    flex-direction: column;
+      font-size: 17px;
 
+  /* @media screen and (max-width: 767px){
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+} */
 
-.content {
-    width: 50vw;
-    height: 5%;
+  }
+
+.other {
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    width: 98%;
+    font-size: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
+}
 
-    .title {
-        width: 90%;
-        margin-bottom: 15px;
-    }
+.title {
+    width: 100%;
+    margin-bottom: 15px; 
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
+}
 
-    .price {
-        width: 10%;
-    }
+.price {
+    font-size: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
+}
 `;
