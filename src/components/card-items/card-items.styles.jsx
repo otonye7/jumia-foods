@@ -11,6 +11,7 @@ export const MenuItemContainer = styled.div`
 
 .other {
     width: 98%;
+    padding-top: 0.6rem;
     display: flex;
     justify-content: space-between;
     font-size: 1rem;

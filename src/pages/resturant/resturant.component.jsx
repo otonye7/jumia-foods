@@ -6,7 +6,7 @@ import { Route } from 'react-router-dom';
 import CategoriesII from '../../components/categoriesii/categoriesii.component';
 import ResturantFilter from '../../components/resturant-filter/resturant-filter.component';
 import KfcMallPage from '../kfc-mall/kfc-mall.component';
-import Bottom from '../../components/bottom/bottom.component';
+// import Bottom from '../../components/bottom/bottom.component';
 import { ResturantContainer} from './resturant.styles';
 
 

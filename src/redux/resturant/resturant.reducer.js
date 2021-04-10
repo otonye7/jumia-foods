@@ -1,4 +1,4 @@
-import CartActionTypes from "../cart/cart.types";
+
 
 const INITIAL_STATE = {
     sections: [{
@@ -8,8 +8,8 @@ const INITIAL_STATE = {
         id: 1,
         rating: 4.5,
         side: 'Salad.Chicken',
-        minimum: 'Min.order #1500',
-        delivery: 'min.delivery fee #500',
+        minimum: 'Min.order $5',
+        delivery: 'min.delivery fee $2',
         linkUrl: '/kfc-mall',
         price: 15
     },
@@ -193,7 +193,7 @@ const INITIAL_STATE = {
 };
 
 const resturantReducer = (state = INITIAL_STATE, action) => {
-    switch(CartActionTypes.type) {
+    switch(action.type) {
         default:
             return state
     }
