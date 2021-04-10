@@ -5,66 +5,68 @@ export const MenuItemContainer = styled.div`
  width: 85%;
  margin: 0 auto;
  display: flex;
- max-width: 1200px;
 
-
-  .menu-items {
-      width: 60%;
-      justify-content: space-between;
-      display: flex;
-      height: 250px;
-      align-items: center;
-
-  /* @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px){
     width:100%;
-    display: flex;
-    flex-direction: column;
     
-} */
-
-.par {
-  display: flex;
-} 
-
-.extra {
-  padding: 0.5rem;
 }
 
-.title {
-  padding: 0.5rem;
+.menu-items {
+      
+      width: 35%;
+      max-width: 150px;
+      display: flex;
+      flex-direction: column;
+      height: 140px;
+      align-items: center;
+      padding-bottom: 0.7rem;
+ 
 }
 
-
-
-  .background-image {
+.background-image {
       width: 100%;
-      max-width: 180px; 
+      max-width: 500px; 
       overflow: hidden;
       height: 100%;
-      max-height: 150px;
+      max-height: 250px;
       background-size: cover;
       background-position: center;
   }
 
-  .add-icon {
-    display: flex;
-    justify-content: space-between;
+  .extra {
+    padding: 0.9rem;
+
+   @media screen and (max-width: 767px){
+      padding: 0.2rem;
+} 
   }
 
- .add {
-     color: #f68b1e;
- }
+  .contents {
+    width: 30%;
+    align-items: center;
 
- .price {
-   margin-right: 0.6rem;
- }
+  @media screen and (max-width: 767px){
+    width:58%;
+    display: flex;
+    flex-direction: column;
+    
+}
+  }
 
- .add-border {
-   border: 2px solid #f68b1e;
-   height: 1.4rem;
- }
+  .sub-contents {
+    align-items: center;
+  }
 
- /* .price {
-   margin-bottom: 2rem;
- } */
+  .icon {
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @media screen and (max-width: 767px){
+    width:14%;
+    
+}
+  }
 `;

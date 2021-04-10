@@ -5,6 +5,10 @@ width: 100%;
 position: absolute;
 top: 120px;
 /* width: 1350px; */
+@media screen and (max-width: 767px){
+    margin-top: 1.5rem;
+    
+}
 
 
  .cover-image {
@@ -20,6 +24,11 @@ top: 120px;
 .text {
     width: 85%;
     margin: 0 auto;
+
+    @media screen and (max-width: 767px){
+    width: 100%;
+    
+}
 }
 
 .border {
@@ -33,6 +42,10 @@ top: 120px;
 .header {
     width: 87%;
     margin: 0 auto;
+
+    @media screen and (max-width: 767px){
+    width:100%;
+}
 }
 
 .header-links {

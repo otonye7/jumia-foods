@@ -4,6 +4,11 @@ import styled from 'styled-components';
 export const MenuItemContainer = styled.div`
   width: 50%;
 
+  @media screen and (max-width: 767px){
+    width:100%;
+    
+}
+
   .content {
       width: 100%;
       font-size: 17px;

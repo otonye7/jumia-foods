@@ -32,8 +32,6 @@ const KfcMallPage = ({sections, collections}) => {
               <br />
              <div className='header'>
                  <Link className='header-links'>VALUE DEALS</Link>
-                 <Link className='header-links'>STREETWISE DEALS</Link>
-                 <Link className='header-links'>CHICKEN PIECES AND CHICKEN BUCKETS</Link>
              </div>
              <br />
              <div className='border-line'></div>
