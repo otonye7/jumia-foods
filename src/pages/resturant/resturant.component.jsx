@@ -2,17 +2,17 @@ import React from 'react';
 import Header from '../../components/header/header.component';
 import SubHeader from '../../components/sub-header/subheader.component';
 import Categories from '../../components/categories/categories.component';
+import { Route } from 'react-router-dom';
 import CategoriesII from '../../components/categoriesii/categoriesii.component';
 import ResturantFilter from '../../components/resturant-filter/resturant-filter.component';
+import KfcMallPage from '../kfc-mall/kfc-mall.component';
 import Bottom from '../../components/bottom/bottom.component';
-// import Vendors from '../../components/vendor/vendor-categories.component';
-// import VendorsTwo from '../../components/vendor-two/vendor-two.component';
 import { ResturantContainer} from './resturant.styles';
 
 
 
 
-const Resturantpage = () => {
+const Resturantpage = ({match}) => {
     console.log()
     return (
         <ResturantContainer>
@@ -25,16 +25,19 @@ const Resturantpage = () => {
                <br />
                <br />
                <div className='categories'>
-                     <Categories />
+                     {/* <Categories /> */}
+                     <Route exact path={`${match.path}`} component={Categories} />
+                     <Route path={`${match.path}/:kfc-mall`} component={KfcMallPage} />
                      <br />
                      <br />
-                     <CategoriesII />
+                     {/* <CategoriesII /> */}
+                     <Route exact path={`${match.path}`} component={CategoriesII} />
                </div>
                <br />
                <br />
                <br />
                <br />
-               <Bottom />
+               {/* <Bottom /> */}
              
            </div>
         </ResturantContainer>

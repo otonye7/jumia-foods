@@ -8,6 +8,8 @@ const INITIAL_STATE = {
         id: 1,
         rating: 4.5,
         side: 'Salad.Chicken',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/kfc-mall',
         price: 15
     },
@@ -16,6 +18,8 @@ const INITIAL_STATE = {
         imageUrl: 'https://just-eat-prod-sg-res.cloudinary.com/image/upload/c_fill,d_au:cuisines:chicken-0.jpg,f_auto,q_auto,w_500/v1/au/restaurants/11003450.jpg',
         id: 2,
         rating: 4.5,
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         side: 'Burger.Chicken',
         linkUrl: '/kfc-spintex',
         price: 10
@@ -26,6 +30,8 @@ const INITIAL_STATE = {
         id: 3,
         rating: 4.7,
         side: 'Burger.Chicken',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/chicken-republic-spintex-road',
         price: 19
     },
@@ -35,6 +41,8 @@ const INITIAL_STATE = {
         id: 4,
         rating: 4.5,
         side: 'Sandwitches.Chicken',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/papas-pizza-spintex',
         price: 8
     },
@@ -44,6 +52,8 @@ const INITIAL_STATE = {
         id: 5,
         rating: 4.6,
         side: 'heineken.coke.fanta.sprite',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/jumia-drinks',
         price: 130
     },
@@ -53,6 +63,8 @@ const INITIAL_STATE = {
         id: 6,
         rating: 4.9,
         side: 'chicken.burger',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/kfc-mall',
         price: 130
     },
@@ -62,6 +74,8 @@ const INITIAL_STATE = {
         id: 7,
         rating: 4.5,
         side: 'Burger.Chicken',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/kfc-spintex',
         price: 10
     },
@@ -71,6 +85,8 @@ const INITIAL_STATE = {
         id: 8,
         rating: 4.9,
         side: 'Burger.fastfood.healthyfood',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/barcelos',
         price: 130
     },
@@ -80,6 +96,8 @@ const INITIAL_STATE = {
         id: 9,
         rating: 4.0,
         side: 'Chicken.Meat',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/jerk-king',
         price: 130
     },
@@ -89,6 +107,8 @@ const INITIAL_STATE = {
         id: 10,
         rating: 4.5,
         side: 'Chicken.rice.burger',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/chicken-republic',
         price: 130
     },
@@ -98,6 +118,8 @@ const INITIAL_STATE = {
         id: 11,
         rating: 4.8,
         side: 'Pizza.Meat.Chicken',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/papas-pizza',
         price: 130
     },
@@ -107,6 +129,8 @@ const INITIAL_STATE = {
         id: 12,
         rating: 4.7,
         side: 'rice.chicken.turkey.pizza',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/formosa-resturant',
         price: 130
     },
@@ -116,6 +140,8 @@ const INITIAL_STATE = {
         id: 13,
         rating: 4.6,
         side: 'pizza.chicken.meat.carrot',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/chicken-pizza',
         price: 130
     },
@@ -125,6 +151,8 @@ const INITIAL_STATE = {
         id: 14,
         rating: 4.8,
         side: 'chicken.burger.meat.pizza',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/griddle-kitchen',
         price: 130
     },
@@ -134,6 +162,8 @@ const INITIAL_STATE = {
         id: 15,
         rating: 5.0,
         side: 'chicken.meant',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/pizza-inn',
         price: 130
     },
@@ -143,6 +173,8 @@ const INITIAL_STATE = {
         id: 16,
         rating: 4.8,
         side: 'rice.beef',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/eno-serwaa',
         price: 130
     },
@@ -152,6 +184,8 @@ const INITIAL_STATE = {
         id: 17,
         rating: 4.8,
         side: 'rice.chicken.drinks.beverages',
+        minimum: 'Min.order #1500',
+        delivery: 'min.delivery fee #500',
         linkUrl: '/vida-e-cafe',
         price: 130
     }
