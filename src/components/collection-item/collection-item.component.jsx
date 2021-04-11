@@ -27,7 +27,8 @@ const CollectionItems = ({title, imageUrl, pieces, drinks, extra, price}) => (
      <span className='price'>${price}</span>
      <AddIcon />
   </div>
-
+  <br />
+  <div className='border'></div>
     </MenuItemContainer>
     
 );

@@ -13,7 +13,7 @@ export const MenuItemContainer = styled.div`
 
 .menu-items {
       
-      width: 35%;
+      width: 30%;
       max-width: 150px;
       display: flex;
       flex-direction: column;
@@ -44,6 +44,9 @@ export const MenuItemContainer = styled.div`
   .contents {
     width: 30%;
     align-items: center;
+    padding-left: 1rem;
+
+    
 
   @media screen and (max-width: 767px){
     width:58%;
@@ -58,15 +61,41 @@ export const MenuItemContainer = styled.div`
   }
 
   .icon {
-    width: 5%;
+    width: 25%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    padding-top: 6rem;
 
 
     @media screen and (max-width: 767px){
     width:14%;
     
 }
+  }
+
+  /* .border {
+    border-bottom: 8px solid #F2F2F2;
+  } */
+
+  .title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
+  }
+
+  .extra {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
+  }
+
+  .pieces {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.125;
+    font-family: Muli,Merriweather,Georgia,serif;
   }
 `;
