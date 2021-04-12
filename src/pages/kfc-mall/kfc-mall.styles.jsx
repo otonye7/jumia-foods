@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const KfcContainer = styled.div`
-width: 100%;
+width: 99%;
 position: absolute;
 top: 120px;
+margin: 0 auto;
 /* width: 1350px; */
 @media screen and (max-width: 767px){
     margin-top: 1.5rem;
@@ -56,5 +57,13 @@ top: 120px;
     font-weight: 400;
     line-height: 1.125;
     font-family: Muli,Merriweather,Georgia,serif;
+}
+
+.drop-down{
+    position: fixed;
+}
+
+.collection-items {
+    
 }
 `;

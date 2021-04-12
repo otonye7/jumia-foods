@@ -20,6 +20,13 @@ export const MenuItemContainer = styled.div`
       height: 140px;
       align-items: center;
       padding-bottom: 0.7rem;
+
+      
+   @media screen and (max-width: 767px){
+      width: 40%;
+      max-width: 130px;
+      height: 120px;
+} 
  
 }
 
@@ -43,7 +50,6 @@ export const MenuItemContainer = styled.div`
 
   .contents {
     width: 30%;
-    align-items: center;
     padding-left: 1rem;
 
     
@@ -60,13 +66,19 @@ export const MenuItemContainer = styled.div`
     align-items: center;
   }
 
+  .add {
+    color: orange;
+  @media screen and (max-width: 767px){
+      display: none;
+   }
+  }
+
   .icon {
     width: 25%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-top: 6rem;
-
 
     @media screen and (max-width: 767px){
     width:14%;

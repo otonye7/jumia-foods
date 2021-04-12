@@ -5,6 +5,7 @@ import {resturants} from '../../redux/resturant/resturant.selector';
 import {collection} from '../../redux/value-deals/value-deals.selector';
 import {connect} from 'react-redux';
 import CardItems from '../../components/card-items/card-items.component';
+import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component';
 import CollectionItems from '../../components/collection-item/collection-item.component';
 import {createStructuredSelector} from 'reselect';
 import { Link } from 'react-router-dom';
@@ -43,6 +44,8 @@ const KfcMallPage = ({sections, collections}) => {
                 )) 
 
              }
+
+             <CartDropdown className='drop-down'/>
              </div>
         </KfcContainer>
              

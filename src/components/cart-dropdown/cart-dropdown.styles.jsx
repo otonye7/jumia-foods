@@ -2,20 +2,20 @@ import styled  from 'styled-components';
 
 export const CartDropDownContainer = styled.div `
 .cart-dropdown {
-    position: absolute;
-    width: 240px;
-    height: 280px;
+    position: fixed;
+    width: 300px;
+    height: 565px;
     display: flex;
     flex-direction: column;
     padding: 20px;
     border: 1px solid black;
     background-color: white;
-    top: 110px;
+    top: 0;
     right: 40px;
     z-index: 5;
 
     @media screen and (max-width: 800px) {
-     top: 150px;
+     display: none;
       
     }
 
@@ -26,10 +26,10 @@ export const CartDropDownContainer = styled.div `
     }
 
     .cart-items {
-        height: 240px;
+        height: 565px;
         display: flex;
         flex-direction: column;
-        overflow: scroll;
+        overflow-y: scroll;
     }
 
   .button {
@@ -41,7 +41,7 @@ export const CartDropDownContainer = styled.div `
   line-height: 50px;
   padding: 0 35px 0 35px;
   font-size: 15px;
-  background-color: orange;
+  background-color: #20ac76;
   color: white;
   text-transform: uppercase;
   font-family: "Open Sans Condensed";

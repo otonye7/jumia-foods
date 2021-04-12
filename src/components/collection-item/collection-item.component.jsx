@@ -25,7 +25,7 @@ const CollectionItems = ({title, imageUrl, pieces, drinks, extra, price}) => (
 
   <div className='icon'>
      <span className='price'>${price}</span>
-     <AddIcon />
+     <AddIcon className='add'/>
   </div>
   <br />
   <div className='border'></div>
